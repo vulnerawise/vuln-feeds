@@ -15,11 +15,8 @@ jobs:
       
       - name: Download Vulnerawise binary
         run: |
-          DOWNLOAD_URL="https://github.com/vulnerawise/vulnerawise/releases/download/v0.1/vulnerawise-linux-amd64"
-          # Download binary to the repository directory
-          EXECUTABLE="vulnerawise-linux-amd64"
-          wget -q -O "$EXECUTABLE" "$DOWNLOAD_URL"
-          chmod +x "$EXECUTABLE"
+          wget -q -O vulnerawise-linux-amd64 https://github.com/vulnerawise/vulnerawise/releases/download/v0.1/vulnerawise-linux-amd64
+          chmod +x vulnerawise-linux-amd64
       
       - name: Run trending command
         run: |
