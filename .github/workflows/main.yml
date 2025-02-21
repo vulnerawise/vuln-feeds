@@ -15,20 +15,16 @@ jobs:
       
       - name: Download Vulnerawise binary
         run: |
-          wget -q -O vulnerawise-linux-amd64 https://github.com/vulnerawise/vulnerawise/releases/download/v0.1/vulnerawise-linux-amd64
-          chmod +x vulnerawise-linux-amd64
+          wget -q -O ./vulnerawise-linux-amd64 https://github.com/vulnerawise/vulnerawise/releases/download/v0.1/vulnerawise-linux-amd64
+          chmod +x ./vulnerawise-linux-amd64
       
       - name: Run trending command
         run: |
-          EXECUTABLE="vulnerawise-linux-amd64"
-          TOP10_JSON="trending.json"
-          "$EXECUTABLE" trending --format json > "$TOP10_JSON"
+          ./vulnerawise-linux-amd64 trending --format json > trending.json
       
       - name: Run export command
         run: |
-          EXECUTABLE="vulnerawise-linux-amd64"
-          API_OUTPUT_DIR="./"
-          "$EXECUTABLE" export --output-dir "$API_OUTPUT_DIR"
+          ./vulnerawise-linux-amd64 export --output-dir ./
       
       - name: Commit and push changes
         run: |
