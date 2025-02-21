@@ -1,0 +1,663 @@
+Local DB file not found or not valid. Downloading latest database
+Database download process completed.
+{
+  "metadata": {
+    "timestamp": "2025-02-21T05:58:00Z"
+  },
+  "data": [
+    {
+      "cve": {
+        "id": "CVE-2024-54756",
+        "description": "A remote code execution (RCE) vulnerability in the ZScript function of ZDoom Team GZDoom v4.13.1 allows attackers to execute arbitrary code via supplying a crafted PK3 file containing a malicious ZScript source file.",
+        "metadata": {
+          "published_date": "2025-02-20T23:15:10.763",
+          "last_modified_date": "2025-02-20T23:15:10.763",
+          "confidence_level": "medium",
+          "severity": "n/a"
+        },
+        "impact": {
+          "cisa_kev": false,
+          "reported_exploited": false,
+          "exploit_maturity": "poc",
+          "automatable": false
+        },
+        "counts": {
+          "public_exploit_count": 2
+        },
+        "epss": {
+          "score": 0,
+          "percentile": 0
+        },
+        "metrics": [],
+        "timeline": {
+          "references": [
+            {
+              "type": "reference",
+              "url": "https://github.com/Chainmanner/GZDoom-Arbitrary-Code-Execution-via-ZScript-PoC",
+              "source_type": "poc",
+              "source": "nvd",
+              "description": "",
+              "published": "2025-02-20T05:00:00.000Z"
+            },
+            {
+              "type": "reference",
+              "url": "https://packetstorm.news/download/189267",
+              "source_type": "poc",
+              "source": "packetstorm",
+              "description": "GZDoom 4.13.1 Remote Code Execution",
+              "published": "2025-02-17T05:00:00.000Z"
+            }
+          ],
+          "repositories": []
+        }
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2024-55457",
+        "description": "MasterSAM Star Gate 11 is vulnerable to directory traversal via /adama/adama/downloadService. An attacker can exploit this vulnerability by manipulating the file parameter to access arbitrary files on the server, potentially exposing sensitive information.",
+        "metadata": {
+          "published_date": "2025-02-20T18:15:25.740",
+          "last_modified_date": "2025-02-20T20:15:46.223",
+          "confidence_level": "medium",
+          "severity": "medium"
+        },
+        "impact": {
+          "cisa_kev": false,
+          "reported_exploited": false,
+          "exploit_maturity": "weaponized",
+          "automatable": true
+        },
+        "counts": {
+          "public_exploit_count": 3
+        },
+        "epss": {
+          "score": 0,
+          "percentile": 0
+        },
+        "metrics": [
+          {
+            "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+            "type": "Secondary",
+            "cvss_version": "3.1",
+            "vector_string": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+            "attack_vector": "NETWORK",
+            "base_score": 6.5
+          }
+        ],
+        "timeline": {
+          "references": [
+            {
+              "type": "reference",
+              "url": "https://github.com/h13nh04ng/CVE-2024-55457-PoC",
+              "source_type": "poc",
+              "source": "nvd",
+              "description": "",
+              "published": "2025-02-20T05:00:00.000Z"
+            },
+            {
+              "type": "reference",
+              "url": "https://github.com/projectdiscovery/nuclei-templates/blob/main/http/cves/2024/CVE-2024-55457.yaml",
+              "source_type": "weapon",
+              "source": "nuclei",
+              "description": "MasterSAM Star Gate v11 - Local File Inclusion",
+              "published": "2025-01-06T05:00:00.000Z"
+            }
+          ],
+          "repositories": [
+            {
+              "type": "repository",
+              "url": "https://github.com/h13nh04ng/CVE-2024-55457-PoC",
+              "repo_name": "h13nh04ng/CVE-2024-55457-PoC",
+              "description": "",
+              "forks": 0,
+              "stars": 0,
+              "published": "2025-01-05T09:19:32Z",
+              "created": "2025-01-05T09:07:46Z",
+              "last_modified": "2025-01-05T09:19:35Z"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-25973",
+        "description": "A stored Cross Site Scripting vulnerability in the \"related recommendations\" feature in Ppress v.0.0.9 allows a remote attacker to execute arbitrary code via a crafted script to the article.title, article.category, and article.tags parameters.",
+        "metadata": {
+          "published_date": "2025-02-20T18:15:26.713",
+          "last_modified_date": "2025-02-20T20:15:47.153",
+          "confidence_level": "medium",
+          "severity": "medium"
+        },
+        "impact": {
+          "cisa_kev": false,
+          "reported_exploited": false,
+          "exploit_maturity": "poc",
+          "automatable": true
+        },
+        "counts": {
+          "public_exploit_count": 1
+        },
+        "epss": {
+          "score": 0,
+          "percentile": 0
+        },
+        "metrics": [
+          {
+            "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+            "type": "Secondary",
+            "cvss_version": "3.1",
+            "vector_string": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+            "attack_vector": "NETWORK",
+            "base_score": 6.5
+          }
+        ],
+        "timeline": {
+          "references": [
+            {
+              "type": "reference",
+              "url": "https://gist.github.com/coleak2021/512acaa12ba0987499d560967acff1d1",
+              "source_type": "poc",
+              "source": "nvd",
+              "description": "",
+              "published": "2025-02-20T05:00:00.000Z"
+            }
+          ],
+          "repositories": []
+        }
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-0108",
+        "description": "An authentication bypass in the Palo Alto Networks PAN-OS software enables an unauthenticated attacker with network access to the management web interface to bypass the authentication otherwise required by the PAN-OS management web interface and invoke certain PHP scripts. While invoking these PHP scripts does not enable remote code execution, it can negatively impact integrity and confidentiality of PAN-OS.\n\nYou can greatly reduce the risk of this issue by restricting access to the management web interface to only trusted internal IP addresses according to our recommended  best practices deployment guidelines https://live.paloaltonetworks.com/t5/community-blogs/tips-amp-tricks-how-to-secure-the-management-access-of-your-palo/ba-p/464431 .\n\nThis issue does not affect Cloud NGFW or Prisma Access software.",
+        "metadata": {
+          "published_date": "2025-02-12T21:15:16.290",
+          "last_modified_date": "2025-02-20T03:15:12.317",
+          "confidence_level": "high",
+          "severity": "high"
+        },
+        "impact": {
+          "cisa_kev": true,
+          "reported_exploited": true,
+          "exploit_maturity": "active",
+          "automatable": true
+        },
+        "counts": {
+          "public_exploit_count": 9
+        },
+        "epss": {
+          "score": 0.03228,
+          "percentile": 0.9123
+        },
+        "metrics": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "cvss_version": "3.1",
+            "vector_string": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+            "attack_vector": "NETWORK",
+            "base_score": 9.10000038146973
+          },
+          {
+            "source": "psirt@paloaltonetworks.com",
+            "type": "Secondary",
+            "cvss_version": "4.0",
+            "vector_string": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:N/R:U/V:C/RE:M/U:Red",
+            "attack_vector": "NETWORK",
+            "base_score": 8.80000019073486
+          }
+        ],
+        "timeline": {
+          "references": [
+            {
+              "type": "reference",
+              "url": "https://github.com/iSee857/CVE-2025-0108-PoC",
+              "source_type": "poc",
+              "source": "nvd",
+              "description": "",
+              "published": "2025-02-12T05:00:00.000Z"
+            },
+            {
+              "type": "reference",
+              "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json#CVE-2025-0108",
+              "source_type": "exploited",
+              "source": "cisa",
+              "description": "Palo Alto Networks PAN-OS contains an authentication bypass vulnerability in its management web interface. This vulnerability allows an unauthenticated attacker with network access to the management web interface to bypass the authentication normally required and invoke certain PHP scripts.. knownRansomwareCampaignUse = Unknown",
+              "published": "2025-02-18"
+            },
+            {
+              "type": "reference",
+              "url": "https://github.com/projectdiscovery/nuclei-templates/blob/main/http/cves/2025/CVE-2025-0108.yaml",
+              "source_type": "weapon",
+              "source": "nuclei",
+              "description": "PAN-OS Management Interface - Path Confusion to Authentication Bypass",
+              "published": "2025-02-13T05:00:00.000Z"
+            }
+          ],
+          "repositories": [
+            {
+              "type": "repository",
+              "url": "https://github.com/iSee857/CVE-2025-0108-PoC",
+              "repo_name": "iSee857/CVE-2025-0108-PoC",
+              "description": "Palo Alto Networks PAN-OS 身份验证绕过漏洞批量检测脚本(CVE-2025-0108)",
+              "forks": 15,
+              "stars": 20,
+              "published": "2025-02-13T06:43:21Z",
+              "created": "2025-02-13T06:39:25Z",
+              "last_modified": "2025-02-19T05:43:06Z"
+            },
+            {
+              "type": "repository",
+              "url": "https://github.com/FOLKS-iwd/CVE-2025-0108-PoC",
+              "repo_name": "FOLKS-iwd/CVE-2025-0108-PoC",
+              "description": "This repository contains a Proof of Concept (PoC) for the **CVE-2025-0108** vulnerability, which is an **authentication bypass** issue in Palo Alto Networks' PAN-OS software. The scripts provided here test for the vulnerability by sending a crafted HTTP request to the target systems.",
+              "forks": 0,
+              "stars": 4,
+              "published": "2025-02-14T13:50:44Z",
+              "created": "2025-02-14T13:22:37Z",
+              "last_modified": "2025-02-19T02:55:30Z"
+            },
+            {
+              "type": "repository",
+              "url": "https://github.com/becrevex/CVE-2025-0108",
+              "repo_name": "becrevex/CVE-2025-0108",
+              "description": "NSE script that checks for CVE-2025-0108 vulnerability in Palo Alto Networks PAN-OS",
+              "forks": 0,
+              "stars": 0,
+              "published": "2025-02-19T17:00:11Z",
+              "created": "2025-02-19T16:57:58Z",
+              "last_modified": "2025-02-19T17:00:15Z"
+            },
+            {
+              "type": "repository",
+              "url": "https://github.com/sohaibeb/CVE-2025-0108",
+              "repo_name": "sohaibeb/CVE-2025-0108",
+              "description": "PAN-OS CVE POC SCRIPT",
+              "forks": 0,
+              "stars": 0,
+              "published": "2025-02-20T07:48:16Z",
+              "created": "2025-02-19T16:00:04Z",
+              "last_modified": "2025-02-20T07:48:19Z"
+            },
+            {
+              "type": "repository",
+              "url": "https://github.com/fr4nc1stein/CVE-2025-0108-SCAN",
+              "repo_name": "fr4nc1stein/CVE-2025-0108-SCAN",
+              "description": " Detects an authentication bypass vulnerability in Palo Alto PAN-OS (CVE-2025-0108).",
+              "forks": 0,
+              "stars": 1,
+              "published": "2025-02-18T22:05:23Z",
+              "created": "2025-02-18T21:04:45Z",
+              "last_modified": "2025-02-21T02:11:05Z"
+            },
+            {
+              "type": "repository",
+              "url": "https://github.com/barcrange/CVE-2025-0108-Authentication-Bypass-checker",
+              "repo_name": "barcrange/CVE-2025-0108-Authentication-Bypass-checker",
+              "description": "",
+              "forks": 0,
+              "stars": 0,
+              "published": "2025-02-19T06:29:56Z",
+              "created": "2025-02-19T06:19:33Z",
+              "last_modified": "2025-02-19T06:33:00Z"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-1035",
+        "description": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in Komtera Technolgies KLog Server allows Manipulating Web Input to File System Calls.This issue affects KLog Server: before 3.1.1.",
+        "metadata": {
+          "published_date": "2025-02-18T12:15:16.087",
+          "last_modified_date": "2025-02-18T12:15:16.087",
+          "confidence_level": "medium",
+          "severity": "medium"
+        },
+        "impact": {
+          "cisa_kev": false,
+          "reported_exploited": false,
+          "exploit_maturity": "weaponized",
+          "automatable": false
+        },
+        "counts": {
+          "public_exploit_count": 1
+        },
+        "epss": {
+          "score": 0.00044,
+          "percentile": 0.12871
+        },
+        "metrics": [
+          {
+            "source": "iletisim@usom.gov.tr",
+            "type": "Primary",
+            "cvss_version": "3.1",
+            "vector_string": "CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+            "attack_vector": "ADJACENT_NETWORK",
+            "base_score": 5.69999980926514
+          }
+        ],
+        "timeline": {
+          "references": [
+            {
+              "type": "reference",
+              "url": "https://github.com/projectdiscovery/nuclei-templates/blob/main/http/cves/2025/CVE-2025-1035.yaml",
+              "source_type": "weapon",
+              "source": "nuclei",
+              "description": "KLog Server - Path Traversal",
+              "published": "2025-02-19T05:00:00.000Z"
+            }
+          ],
+          "repositories": []
+        }
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2024-13485",
+        "description": "The LTL Freight Quotes – ABF Freight Edition plugin for WordPress is vulnerable to SQL Injection via the 'edit_id' and 'dropship_edit_id' parameters in all versions up to, and including, 3.3.7 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
+        "metadata": {
+          "published_date": "2025-02-19T12:15:31.047",
+          "last_modified_date": "2025-02-19T12:15:31.047",
+          "confidence_level": "medium",
+          "severity": "high"
+        },
+        "impact": {
+          "cisa_kev": false,
+          "reported_exploited": false,
+          "exploit_maturity": "poc",
+          "automatable": true
+        },
+        "counts": {
+          "public_exploit_count": 2
+        },
+        "epss": {
+          "score": 0.00087,
+          "percentile": 0.39355
+        },
+        "metrics": [
+          {
+            "source": "security@wordfence.com",
+            "type": "Primary",
+            "cvss_version": "3.1",
+            "vector_string": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+            "attack_vector": "NETWORK",
+            "base_score": 7.5
+          }
+        ],
+        "timeline": {
+          "references": [
+            {
+              "type": "reference",
+              "url": "https://packetstorm.news/download/189337",
+              "source_type": "poc",
+              "source": "packetstorm",
+              "description": "LTL Freight Quotes – ABF Freight Edition 3.3.7 SQL Injection",
+              "published": "2025-02-20T05:00:00.000Z"
+            }
+          ],
+          "repositories": [
+            {
+              "type": "repository",
+              "url": "https://github.com/RandomRobbieBF/CVE-2024-13485",
+              "repo_name": "RandomRobbieBF/CVE-2024-13485",
+              "description": "LTL Freight Quotes – ABF Freight Edition \u003c= 3.3.7 - Unauthenticated SQL Injection",
+              "forks": 0,
+              "stars": 0,
+              "published": "2025-02-20T15:48:06Z",
+              "created": "2025-02-20T15:47:47Z",
+              "last_modified": "2025-02-20T15:48:09Z"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2024-13483",
+        "description": "The LTL Freight Quotes – SAIA Edition plugin for WordPress is vulnerable to SQL Injection via the 'edit_id' and 'dropship_edit_id' parameters in all versions up to, and including, 2.2.10 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
+        "metadata": {
+          "published_date": "2025-02-19T12:15:30.900",
+          "last_modified_date": "2025-02-19T12:15:30.900",
+          "confidence_level": "medium",
+          "severity": "high"
+        },
+        "impact": {
+          "cisa_kev": false,
+          "reported_exploited": false,
+          "exploit_maturity": "poc",
+          "automatable": true
+        },
+        "counts": {
+          "public_exploit_count": 2
+        },
+        "epss": {
+          "score": 0.00087,
+          "percentile": 0.39355
+        },
+        "metrics": [
+          {
+            "source": "security@wordfence.com",
+            "type": "Primary",
+            "cvss_version": "3.1",
+            "vector_string": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+            "attack_vector": "NETWORK",
+            "base_score": 7.5
+          }
+        ],
+        "timeline": {
+          "references": [
+            {
+              "type": "reference",
+              "url": "https://packetstorm.news/download/189336",
+              "source_type": "poc",
+              "source": "packetstorm",
+              "description": "LTL Freight Quotes – SAIA Edition 2.2.10 SQL Injection",
+              "published": "2025-02-20T05:00:00.000Z"
+            }
+          ],
+          "repositories": [
+            {
+              "type": "repository",
+              "url": "https://github.com/RandomRobbieBF/CVE-2024-13483",
+              "repo_name": "RandomRobbieBF/CVE-2024-13483",
+              "description": "LTL Freight Quotes – SAIA Edition \u003c= 2.2.10 - Unauthenticated SQL Injection",
+              "forks": 0,
+              "stars": 0,
+              "published": "2025-02-20T15:49:11Z",
+              "created": "2025-02-20T15:48:57Z",
+              "last_modified": "2025-02-20T15:49:14Z"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2024-13478",
+        "description": "The LTL Freight Quotes – TForce Edition plugin for WordPress is vulnerable to SQL Injection via the 'dropship_edit_id' and 'edit_id' parameters in all versions up to, and including, 3.6.4 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
+        "metadata": {
+          "published_date": "2025-02-19T12:15:29.777",
+          "last_modified_date": "2025-02-19T12:15:29.777",
+          "confidence_level": "medium",
+          "severity": "high"
+        },
+        "impact": {
+          "cisa_kev": false,
+          "reported_exploited": false,
+          "exploit_maturity": "poc",
+          "automatable": true
+        },
+        "counts": {
+          "public_exploit_count": 2
+        },
+        "epss": {
+          "score": 0.00087,
+          "percentile": 0.39355
+        },
+        "metrics": [
+          {
+            "source": "security@wordfence.com",
+            "type": "Primary",
+            "cvss_version": "3.1",
+            "vector_string": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+            "attack_vector": "NETWORK",
+            "base_score": 7.5
+          }
+        ],
+        "timeline": {
+          "references": [
+            {
+              "type": "reference",
+              "url": "https://packetstorm.news/download/189335",
+              "source_type": "poc",
+              "source": "packetstorm",
+              "description": "LTL Freight Quotes – TForce Edition 3.6.4 SQL Injection",
+              "published": "2025-02-20T05:00:00.000Z"
+            }
+          ],
+          "repositories": [
+            {
+              "type": "repository",
+              "url": "https://github.com/RandomRobbieBF/CVE-2024-13478",
+              "repo_name": "RandomRobbieBF/CVE-2024-13478",
+              "description": "LTL Freight Quotes – TForce Edition \u003c= 3.6.4 - Unauthenticated SQL Injection",
+              "forks": 0,
+              "stars": 0,
+              "published": "2025-02-20T15:50:35Z",
+              "created": "2025-02-20T15:50:10Z",
+              "last_modified": "2025-02-20T15:50:39Z"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2024-13489",
+        "description": "The LTL Freight Quotes – Old Dominion Edition plugin for WordPress is vulnerable to SQL Injection via the 'edit_id' and 'dropship_edit_id' parameters in all versions up to, and including, 4.2.10 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
+        "metadata": {
+          "published_date": "2025-02-19T10:15:08.870",
+          "last_modified_date": "2025-02-19T10:15:08.870",
+          "confidence_level": "medium",
+          "severity": "high"
+        },
+        "impact": {
+          "cisa_kev": false,
+          "reported_exploited": false,
+          "exploit_maturity": "poc",
+          "automatable": true
+        },
+        "counts": {
+          "public_exploit_count": 2
+        },
+        "epss": {
+          "score": 0.00087,
+          "percentile": 0.39355
+        },
+        "metrics": [
+          {
+            "source": "security@wordfence.com",
+            "type": "Primary",
+            "cvss_version": "3.1",
+            "vector_string": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+            "attack_vector": "NETWORK",
+            "base_score": 7.5
+          }
+        ],
+        "timeline": {
+          "references": [
+            {
+              "type": "reference",
+              "url": "https://packetstorm.news/download/189338",
+              "source_type": "poc",
+              "source": "packetstorm",
+              "description": "LTL Freight Quotes – Old Dominion Edition 4.2.10 SQL Injection",
+              "published": "2025-02-20T05:00:00.000Z"
+            }
+          ],
+          "repositories": [
+            {
+              "type": "repository",
+              "url": "https://github.com/RandomRobbieBF/CVE-2024-13489",
+              "repo_name": "RandomRobbieBF/CVE-2024-13489",
+              "description": "LTL Freight Quotes – Old Dominion Edition \u003c= 4.2.10 - Unauthenticated SQL Injection",
+              "forks": 0,
+              "stars": 0,
+              "published": "2025-02-20T15:46:28Z",
+              "created": "2025-02-20T15:46:01Z",
+              "last_modified": "2025-02-20T15:46:31Z"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-1094",
+        "description": "Improper neutralization of quoting syntax in PostgreSQL libpq functions PQescapeLiteral(), PQescapeIdentifier(), PQescapeString(), and PQescapeStringConn() allows a database input provider to achieve SQL injection in certain usage patterns.  Specifically, SQL injection requires the application to use the function result to construct input to psql, the PostgreSQL interactive terminal.  Similarly, improper neutralization of quoting syntax in PostgreSQL command line utility programs allows a source of command line arguments to achieve SQL injection when client_encoding is BIG5 and server_encoding is one of EUC_TW or MULE_INTERNAL.  Versions before PostgreSQL 17.3, 16.7, 15.11, 14.16, and 13.19 are affected.",
+        "metadata": {
+          "published_date": "2025-02-13T13:15:09.130",
+          "last_modified_date": "2025-02-20T19:15:11.847",
+          "confidence_level": "high",
+          "severity": "high"
+        },
+        "impact": {
+          "cisa_kev": false,
+          "reported_exploited": false,
+          "exploit_maturity": "weaponized",
+          "automatable": false
+        },
+        "counts": {
+          "public_exploit_count": 3
+        },
+        "epss": {
+          "score": 0.00043,
+          "percentile": 0.11709
+        },
+        "metrics": [
+          {
+            "source": "f86ef6dc-4d3a-42ad-8f28-e6d5547a5007",
+            "type": "Secondary",
+            "cvss_version": "3.1",
+            "vector_string": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+            "attack_vector": "NETWORK",
+            "base_score": 8.10000038146973
+          }
+        ],
+        "timeline": {
+          "references": [
+            {
+              "type": "reference",
+              "url": "https://github.com/rapid7/metasploit-framework/blob/master//modules/exploits/linux/http/beyondtrust_pra_rs_unauth_rce.rb",
+              "source_type": "weapon",
+              "source": "metasploit",
+              "description": "BeyondTrust Privileged Remote Access (PRA) and Remote Support (RS) unauthenticated Remote Code Execution",
+              "published": "2024-12-16T05:00:00.000Z"
+            },
+            {
+              "type": "reference",
+              "url": "https://packetstorm.news/download/189316",
+              "source_type": "poc",
+              "source": "packetstorm",
+              "description": "BeyondTrust Remote Code Execution",
+              "published": "2025-02-19T05:00:00.000Z"
+            },
+            {
+              "type": "reference",
+              "url": "https://0day.today/download/39921",
+              "source_type": "poc",
+              "source": "0day",
+              "description": "BeyondTrust Remote Code Execution Exploit",
+              "published": "2025-02-20T05:00:00.000Z"
+            }
+          ],
+          "repositories": []
+        }
+      }
+    }
+  ]
+}
