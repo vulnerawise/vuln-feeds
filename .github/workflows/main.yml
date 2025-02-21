@@ -20,7 +20,7 @@ jobs:
       
       - name: Run trending command
         run: |
-          ./vulnerawise-linux-amd64 trending --format json > trending.json
+          ./vulnerawise-linux-amd64 updatedb && ./vulnerawise-linux-amd64 trending --format json > trending.json
       
       - name: Run export command
         run: |
