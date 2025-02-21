@@ -1,0 +1,52 @@
+name: Run Vulnerawise Feed Exporter
+
+on:
+  workflow_dispatch:  # Allows manual trigger from the GitHub UI
+  schedule:
+    - cron: '0 */2 * * *'  # Runs every 2 hours (at minute 0)
+
+jobs:
+  run-collector:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Download Vulnerawise binary
+        run: |
+          DOWNLOAD_URL="https://github.com/vulnerawise/vulnerawise/releases/download/v0.1/vulnerawise-linux-amd64"
+          # Download binary to the repository directory
+          EXECUTABLE="vulnerawise-linux-amd64"
+          wget -q -O "$EXECUTABLE" "$DOWNLOAD_URL"
+          chmod +x "$EXECUTABLE"
+      
+      - name: Run trending command
+        run: |
+          EXECUTABLE="vulnerawise-linux-amd64"
+          TOP10_JSON="trending.json"
+          "$EXECUTABLE" trending --format json > "$TOP10_JSON"
+      
+      - name: Run export command
+        run: |
+          EXECUTABLE="vulnerawise-linux-amd64"
+          API_OUTPUT_DIR="./"
+          "$EXECUTABLE" export --output-dir "$API_OUTPUT_DIR"
+      
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Add all changes
+          git add .
+          # Remove the binary from staging (ignore it)
+          git reset HEAD vulnerawise-linux-amd64
+          
+          # Check for any changes
+          if git diff-index --quiet HEAD --; then
+            echo "No changes to commit."
+          else
+            git commit -m "Automated feed export update"
+            git push origin HEAD:main
+          fi
