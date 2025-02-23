@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "timestamp": "2025-02-23T12:17:03Z"
+    "timestamp": "2025-02-23T14:08:56Z"
   },
   "data": [
     {
@@ -69,6 +69,54 @@
     },
     {
       "cve": {
+        "id": "CVE-2025-24989",
+        "description": "An improper access control vulnerability in Power Pages allows an unauthorized attacker to elevate privileges over a network potentially bypassing the user registration control.\nThis vulnerability has already been mitigated in the service and all affected customers have been notified. This update addressed the registration control bypass. Affected customers have been given instructions on reviewing their sites for potential exploitation and clean up methods. If you've not been notified this vulnerability does not affect you.",
+        "metadata": {
+          "published_date": "2025-02-19T23:15:15.167",
+          "last_modified_date": "2025-02-22T02:00:01.727",
+          "confidence_level": "high",
+          "severity": "high"
+        },
+        "impact": {
+          "cisa_kev": true,
+          "reported_exploited": true,
+          "exploit_maturity": "active",
+          "automatable": true
+        },
+        "counts": {
+          "public_exploit_count": 1
+        },
+        "epss": {
+          "score": 0.01179,
+          "percentile": 0.85104
+        },
+        "metrics": [
+          {
+            "source": "secure@microsoft.com",
+            "type": "Secondary",
+            "cvss_version": "3.1",
+            "vector_string": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:N",
+            "attack_vector": "NETWORK",
+            "base_score": 8.19999980926514
+          }
+        ],
+        "timeline": {
+          "references": [
+            {
+              "type": "reference",
+              "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json#CVE-2025-24989",
+              "source_type": "exploited",
+              "source": "cisa",
+              "description": "Microsoft Power Pages contains an improper access control vulnerability that allows an unauthorized attacker to elevate privileges over a network potentially bypassing the user registration control.. knownRansomwareCampaignUse = Unknown",
+              "published": "2025-02-21"
+            }
+          ],
+          "repositories": []
+        }
+      }
+    },
+    {
+      "cve": {
         "id": "CVE-2024-54756",
         "description": "A remote code execution (RCE) vulnerability in the ZScript function of ZDoom Team GZDoom v4.13.1 allows attackers to execute arbitrary code via supplying a crafted PK3 file containing a malicious ZScript source file.",
         "metadata": {
@@ -128,122 +176,6 @@
             }
           ],
           "repositories": []
-        }
-      }
-    },
-    {
-      "cve": {
-        "id": "CVE-2025-24989",
-        "description": "An improper access control vulnerability in Power Pages allows an unauthorized attacker to elevate privileges over a network potentially bypassing the user registration control.\nThis vulnerability has already been mitigated in the service and all affected customers have been notified. This update addressed the registration control bypass. Affected customers have been given instructions on reviewing their sites for potential exploitation and clean up methods. If you've not been notified this vulnerability does not affect you.",
-        "metadata": {
-          "published_date": "2025-02-19T23:15:15.167",
-          "last_modified_date": "2025-02-22T02:00:01.727",
-          "confidence_level": "high",
-          "severity": "high"
-        },
-        "impact": {
-          "cisa_kev": true,
-          "reported_exploited": true,
-          "exploit_maturity": "active",
-          "automatable": true
-        },
-        "counts": {
-          "public_exploit_count": 1
-        },
-        "epss": {
-          "score": 0.01179,
-          "percentile": 0.85104
-        },
-        "metrics": [
-          {
-            "source": "secure@microsoft.com",
-            "type": "Secondary",
-            "cvss_version": "3.1",
-            "vector_string": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:N",
-            "attack_vector": "NETWORK",
-            "base_score": 8.19999980926514
-          }
-        ],
-        "timeline": {
-          "references": [
-            {
-              "type": "reference",
-              "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json#CVE-2025-24989",
-              "source_type": "exploited",
-              "source": "cisa",
-              "description": "Microsoft Power Pages contains an improper access control vulnerability that allows an unauthorized attacker to elevate privileges over a network potentially bypassing the user registration control.. knownRansomwareCampaignUse = Unknown",
-              "published": "2025-02-21"
-            }
-          ],
-          "repositories": []
-        }
-      }
-    },
-    {
-      "cve": {
-        "id": "CVE-2024-55457",
-        "description": "MasterSAM Star Gate 11 is vulnerable to directory traversal via /adama/adama/downloadService. An attacker can exploit this vulnerability by manipulating the file parameter to access arbitrary files on the server, potentially exposing sensitive information.",
-        "metadata": {
-          "published_date": "2025-02-20T18:15:25.740",
-          "last_modified_date": "2025-02-20T20:15:46.223",
-          "confidence_level": "medium",
-          "severity": "medium"
-        },
-        "impact": {
-          "cisa_kev": false,
-          "reported_exploited": false,
-          "exploit_maturity": "weaponized",
-          "automatable": true
-        },
-        "counts": {
-          "public_exploit_count": 3
-        },
-        "epss": {
-          "score": 0.00053,
-          "percentile": 0.24362
-        },
-        "metrics": [
-          {
-            "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
-            "type": "Secondary",
-            "cvss_version": "3.1",
-            "vector_string": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
-            "attack_vector": "NETWORK",
-            "base_score": 6.5
-          }
-        ],
-        "timeline": {
-          "references": [
-            {
-              "type": "reference",
-              "url": "https://github.com/h13nh04ng/CVE-2024-55457-PoC",
-              "source_type": "poc",
-              "source": "nvd",
-              "description": "",
-              "published": "2025-02-20T05:00:00.000Z"
-            },
-            {
-              "type": "reference",
-              "url": "https://github.com/projectdiscovery/nuclei-templates/blob/main/http/cves/2024/CVE-2024-55457.yaml",
-              "source_type": "weapon",
-              "source": "nuclei",
-              "description": "MasterSAM Star Gate v11 - Local File Inclusion",
-              "published": "2025-01-06T05:00:00.000Z"
-            }
-          ],
-          "repositories": [
-            {
-              "type": "repository",
-              "url": "https://github.com/h13nh04ng/CVE-2024-55457-PoC",
-              "repo_name": "h13nh04ng/CVE-2024-55457-PoC",
-              "description": "",
-              "forks": 0,
-              "stars": 0,
-              "published": "2025-01-05T09:19:32Z",
-              "created": "2025-01-05T09:07:46Z",
-              "last_modified": "2025-01-05T09:19:35Z"
-            }
-          ]
         }
       }
     },
@@ -381,6 +313,74 @@
               "published": "2025-02-19T06:29:56Z",
               "created": "2025-02-19T06:19:33Z",
               "last_modified": "2025-02-19T06:33:00Z"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2024-55457",
+        "description": "MasterSAM Star Gate 11 is vulnerable to directory traversal via /adama/adama/downloadService. An attacker can exploit this vulnerability by manipulating the file parameter to access arbitrary files on the server, potentially exposing sensitive information.",
+        "metadata": {
+          "published_date": "2025-02-20T18:15:25.740",
+          "last_modified_date": "2025-02-20T20:15:46.223",
+          "confidence_level": "medium",
+          "severity": "medium"
+        },
+        "impact": {
+          "cisa_kev": false,
+          "reported_exploited": false,
+          "exploit_maturity": "weaponized",
+          "automatable": true
+        },
+        "counts": {
+          "public_exploit_count": 3
+        },
+        "epss": {
+          "score": 0.00053,
+          "percentile": 0.24362
+        },
+        "metrics": [
+          {
+            "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+            "type": "Secondary",
+            "cvss_version": "3.1",
+            "vector_string": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+            "attack_vector": "NETWORK",
+            "base_score": 6.5
+          }
+        ],
+        "timeline": {
+          "references": [
+            {
+              "type": "reference",
+              "url": "https://github.com/h13nh04ng/CVE-2024-55457-PoC",
+              "source_type": "poc",
+              "source": "nvd",
+              "description": "",
+              "published": "2025-02-20T05:00:00.000Z"
+            },
+            {
+              "type": "reference",
+              "url": "https://github.com/projectdiscovery/nuclei-templates/blob/main/http/cves/2024/CVE-2024-55457.yaml",
+              "source_type": "weapon",
+              "source": "nuclei",
+              "description": "MasterSAM Star Gate v11 - Local File Inclusion",
+              "published": "2025-01-06T05:00:00.000Z"
+            }
+          ],
+          "repositories": [
+            {
+              "type": "repository",
+              "url": "https://github.com/h13nh04ng/CVE-2024-55457-PoC",
+              "repo_name": "h13nh04ng/CVE-2024-55457-PoC",
+              "description": "",
+              "forks": 0,
+              "stars": 0,
+              "published": "2025-01-05T09:19:32Z",
+              "created": "2025-01-05T09:07:46Z",
+              "last_modified": "2025-01-05T09:19:35Z"
             }
           ]
         }
