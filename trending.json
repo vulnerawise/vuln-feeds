@@ -1,8 +1,140 @@
 {
   "metadata": {
-    "timestamp": "2025-02-24T22:10:03Z"
+    "timestamp": "2025-02-25T00:49:30Z"
   },
   "data": [
+    {
+      "cve": {
+        "id": "CVE-2025-1632",
+        "description": "A vulnerability was found in libarchive up to 3.7.7. It has been classified as problematic. This affects the function list of the file bsdunzip.c. The manipulation leads to null pointer dereference. It is possible to launch the attack on the local host. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+        "metadata": {
+          "published_date": "2025-02-24T14:15:11.590",
+          "last_modified_date": "2025-02-24T15:15:13.217",
+          "confidence_level": "high",
+          "severity": "medium"
+        },
+        "impact": {
+          "cisa_kev": false,
+          "reported_exploited": false,
+          "exploit_maturity": "poc",
+          "automatable": false
+        },
+        "counts": {
+          "public_exploit_count": 2
+        },
+        "epss": {
+          "score": 0,
+          "percentile": 0
+        },
+        "metrics": [
+          {
+            "source": "cna@vuldb.com",
+            "type": "Secondary",
+            "cvss_version": "3.1",
+            "vector_string": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+            "attack_vector": "LOCAL",
+            "base_score": 3.29999995231628
+          },
+          {
+            "source": "cna@vuldb.com",
+            "type": "Secondary",
+            "cvss_version": "2.0",
+            "vector_string": "AV:L/AC:L/Au:S/C:N/I:N/A:P",
+            "attack_vector": "LOCAL",
+            "base_score": 1.70000004768372
+          },
+          {
+            "source": "cna@vuldb.com",
+            "type": "Secondary",
+            "cvss_version": "4.0",
+            "vector_string": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+            "attack_vector": "LOCAL",
+            "base_score": 4.80000019073486
+          }
+        ],
+        "timeline": {
+          "references": [
+            {
+              "type": "reference",
+              "url": "https://github.com/Ekkosun/pocs/blob/main/bsdunzip-poc",
+              "source_type": "poc",
+              "source": "nvd",
+              "description": "",
+              "published": "2025-02-24T05:00:00.000Z"
+            },
+            {
+              "type": "reference",
+              "url": "https://github.com/Ekkosun/pocs/blob/main/bsdunzip-poc",
+              "source_type": "poc",
+              "source": "nvd",
+              "description": "",
+              "published": "2025-02-24T05:00:00.000Z"
+            }
+          ],
+          "repositories": []
+        }
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2024-54820",
+        "description": "XOne Web Monitor v02.10.2024.530 framework 1.0.4.9 was discovered to contain a SQL injection vulnerability in the login page. This vulnerability allows attackers to extract all usernames and passwords via a crafted input.",
+        "metadata": {
+          "published_date": "2025-02-24T18:15:17.523",
+          "last_modified_date": "2025-02-24T18:15:17.523",
+          "confidence_level": "medium",
+          "severity": "critical"
+        },
+        "impact": {
+          "cisa_kev": false,
+          "reported_exploited": false,
+          "exploit_maturity": "poc",
+          "automatable": true
+        },
+        "counts": {
+          "public_exploit_count": 2
+        },
+        "epss": {
+          "score": 0,
+          "percentile": 0
+        },
+        "metrics": [
+          {
+            "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+            "type": "Secondary",
+            "cvss_version": "3.1",
+            "vector_string": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+            "attack_vector": "NETWORK",
+            "base_score": 9.80000019073486
+          }
+        ],
+        "timeline": {
+          "references": [
+            {
+              "type": "reference",
+              "url": "https://packetstorm.news/download/189389",
+              "source_type": "poc",
+              "source": "packetstorm",
+              "description": "XOne Web Monitor 02.10.2024.530 SQL Injection",
+              "published": "2025-02-24T05:00:00.000Z"
+            }
+          ],
+          "repositories": [
+            {
+              "type": "repository",
+              "url": "https://github.com/jcarabantes/CVE-2024-54820",
+              "repo_name": "jcarabantes/CVE-2024-54820",
+              "description": "Vuln disclosure for XOne app",
+              "forks": 0,
+              "stars": 0,
+              "published": "2025-02-22T20:29:16Z",
+              "created": "2024-11-17T12:31:23Z",
+              "last_modified": "2025-02-22T20:34:18Z"
+            }
+          ]
+        }
+      }
+    },
     {
       "cve": {
         "id": "CVE-2025-1611",
@@ -23,8 +155,8 @@
           "public_exploit_count": 1
         },
         "epss": {
-          "score": 0,
-          "percentile": 0
+          "score": 0.00068,
+          "percentile": 0.32673
         },
         "metrics": [
           {
@@ -87,8 +219,8 @@
           "public_exploit_count": 1
         },
         "epss": {
-          "score": 0,
-          "percentile": 0
+          "score": 0.00068,
+          "percentile": 0.32673
         },
         "metrics": [
           {
@@ -151,8 +283,8 @@
           "public_exploit_count": 1
         },
         "epss": {
-          "score": 0,
-          "percentile": 0
+          "score": 0.00052,
+          "percentile": 0.23342
         },
         "metrics": [
           {
@@ -201,9 +333,9 @@
         "description": "An improper access control vulnerability in Power Pages allows an unauthorized attacker to elevate privileges over a network potentially bypassing the user registration control.\nThis vulnerability has already been mitigated in the service and all affected customers have been notified. This update addressed the registration control bypass. Affected customers have been given instructions on reviewing their sites for potential exploitation and clean up methods. If you've not been notified this vulnerability does not affect you.",
         "metadata": {
           "published_date": "2025-02-19T23:15:15.167",
-          "last_modified_date": "2025-02-22T02:00:01.727",
+          "last_modified_date": "2025-02-24T14:55:58.823",
           "confidence_level": "high",
-          "severity": "high"
+          "severity": "critical"
         },
         "impact": {
           "cisa_kev": true,
@@ -216,9 +348,17 @@
         },
         "epss": {
           "score": 0.01179,
-          "percentile": 0.85104
+          "percentile": 0.85106
         },
         "metrics": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "cvss_version": "3.1",
+            "vector_string": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+            "attack_vector": "NETWORK",
+            "base_score": 9.80000019073486
+          },
           {
             "source": "secure@microsoft.com",
             "type": "Secondary",
@@ -263,8 +403,8 @@
           "public_exploit_count": 1
         },
         "epss": {
-          "score": 0,
-          "percentile": 0
+          "score": 0.00045,
+          "percentile": 0.17964
         },
         "metrics": [
           {
@@ -301,134 +441,6 @@
     },
     {
       "cve": {
-        "id": "CVE-2025-1586",
-        "description": "A vulnerability was found in code-projects Blood Bank System 1.0. It has been declared as problematic. This vulnerability affects unknown code of the file /Blood/A-.php. The manipulation of the argument Bloodname leads to cross site scripting. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used.",
-        "metadata": {
-          "published_date": "2025-02-23T15:15:09.407",
-          "last_modified_date": "2025-02-23T15:15:09.407",
-          "confidence_level": "medium",
-          "severity": "medium"
-        },
-        "impact": {
-          "cisa_kev": false,
-          "reported_exploited": false,
-          "exploit_maturity": "poc",
-          "automatable": false
-        },
-        "counts": {
-          "public_exploit_count": 1
-        },
-        "epss": {
-          "score": 0,
-          "percentile": 0
-        },
-        "metrics": [
-          {
-            "source": "cna@vuldb.com",
-            "type": "Primary",
-            "cvss_version": "3.1",
-            "vector_string": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:L/A:N",
-            "attack_vector": "NETWORK",
-            "base_score": 3.5
-          },
-          {
-            "source": "cna@vuldb.com",
-            "type": "Secondary",
-            "cvss_version": "4.0",
-            "vector_string": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:P/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-            "attack_vector": "NETWORK",
-            "base_score": 5.09999990463257
-          },
-          {
-            "source": "cna@vuldb.com",
-            "type": "Secondary",
-            "cvss_version": "2.0",
-            "vector_string": "AV:N/AC:L/Au:S/C:N/I:P/A:N",
-            "attack_vector": "NETWORK",
-            "base_score": 4
-          }
-        ],
-        "timeline": {
-          "references": [
-            {
-              "type": "reference",
-              "url": "https://github.com/1337g/bloodbanksystem_poc/blob/main/xss-gu(1).pdf",
-              "source_type": "poc",
-              "source": "nvd",
-              "description": "",
-              "published": "2025-02-23T05:00:00.000Z"
-            }
-          ],
-          "repositories": []
-        }
-      }
-    },
-    {
-      "cve": {
-        "id": "CVE-2024-54756",
-        "description": "A remote code execution (RCE) vulnerability in the ZScript function of ZDoom Team GZDoom v4.13.1 allows attackers to execute arbitrary code via supplying a crafted PK3 file containing a malicious ZScript source file.",
-        "metadata": {
-          "published_date": "2025-02-20T23:15:10.763",
-          "last_modified_date": "2025-02-21T22:15:12.277",
-          "confidence_level": "medium",
-          "severity": "critical"
-        },
-        "impact": {
-          "cisa_kev": false,
-          "reported_exploited": false,
-          "exploit_maturity": "poc",
-          "automatable": true
-        },
-        "counts": {
-          "public_exploit_count": 3
-        },
-        "epss": {
-          "score": 0.00043,
-          "percentile": 0.11723
-        },
-        "metrics": [
-          {
-            "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
-            "type": "Secondary",
-            "cvss_version": "3.1",
-            "vector_string": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-            "attack_vector": "NETWORK",
-            "base_score": 9.80000019073486
-          }
-        ],
-        "timeline": {
-          "references": [
-            {
-              "type": "reference",
-              "url": "https://github.com/Chainmanner/GZDoom-Arbitrary-Code-Execution-via-ZScript-PoC",
-              "source_type": "poc",
-              "source": "nvd",
-              "description": "",
-              "published": "2025-02-20T05:00:00.000Z"
-            },
-            {
-              "type": "reference",
-              "url": "https://github.com/Chainmanner/GZDoom-Arbitrary-Code-Execution-via-ZScript-PoC",
-              "source_type": "poc",
-              "source": "nvd",
-              "description": "",
-              "published": "2025-02-20T05:00:00.000Z"
-            },
-            {
-              "type": "reference",
-              "url": "https://packetstorm.news/download/189267",
-              "source_type": "poc",
-              "source": "packetstorm",
-              "description": "GZDoom 4.13.1 Remote Code Execution",
-              "published": "2025-02-17T05:00:00.000Z"
-            }
-          ],
-          "repositories": []
-        }
-      }
-    },
-    {
-      "cve": {
         "id": "CVE-2025-0108",
         "description": "An authentication bypass in the Palo Alto Networks PAN-OS software enables an unauthenticated attacker with network access to the management web interface to bypass the authentication otherwise required by the PAN-OS management web interface and invoke certain PHP scripts. While invoking these PHP scripts does not enable remote code execution, it can negatively impact integrity and confidentiality of PAN-OS.\n\nYou can greatly reduce the risk of this issue by restricting access to the management web interface to only trusted internal IP addresses according to our recommended  best practices deployment guidelines https://live.paloaltonetworks.com/t5/community-blogs/tips-amp-tricks-how-to-secure-the-management-access-of-your-palo/ba-p/464431 .\n\nThis issue does not affect Cloud NGFW or Prisma Access software.",
         "metadata": {
@@ -448,7 +460,7 @@
         },
         "epss": {
           "score": 0.95537,
-          "percentile": 0.99565
+          "percentile": 0.99566
         },
         "metrics": [
           {
@@ -502,10 +514,10 @@
               "repo_name": "iSee857/CVE-2025-0108-PoC",
               "description": "Palo Alto Networks PAN-OS 身份验证绕过漏洞批量检测脚本(CVE-2025-0108)",
               "forks": 16,
-              "stars": 21,
+              "stars": 22,
               "published": "2025-02-13T06:43:21Z",
               "created": "2025-02-13T06:39:25Z",
-              "last_modified": "2025-02-22T16:12:58Z"
+              "last_modified": "2025-02-24T11:59:27Z"
             },
             {
               "type": "repository",
@@ -516,7 +528,7 @@
               "stars": 6,
               "published": "2025-02-14T13:50:44Z",
               "created": "2025-02-14T13:22:37Z",
-              "last_modified": "2025-02-22T06:27:38Z"
+              "last_modified": "2025-02-24T10:24:47Z"
             },
             {
               "type": "repository",
@@ -568,62 +580,62 @@
     },
     {
       "cve": {
-        "id": "CVE-2025-1579",
-        "description": "A vulnerability was found in code-projects Blood Bank System 1.0 and classified as problematic. This issue affects some unknown processing of the file /admin/user.php. The manipulation of the argument email leads to cross site scripting. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. Other parameters might be affected as well.",
+        "id": "CVE-2024-54756",
+        "description": "A remote code execution (RCE) vulnerability in the ZScript function of ZDoom Team GZDoom v4.13.1 allows attackers to execute arbitrary code via supplying a crafted PK3 file containing a malicious ZScript source file.",
         "metadata": {
-          "published_date": "2025-02-23T09:15:09.393",
-          "last_modified_date": "2025-02-23T09:15:09.393",
+          "published_date": "2025-02-20T23:15:10.763",
+          "last_modified_date": "2025-02-21T22:15:12.277",
           "confidence_level": "medium",
-          "severity": "medium"
+          "severity": "critical"
         },
         "impact": {
           "cisa_kev": false,
           "reported_exploited": false,
           "exploit_maturity": "poc",
-          "automatable": false
+          "automatable": true
         },
         "counts": {
-          "public_exploit_count": 1
+          "public_exploit_count": 3
         },
         "epss": {
-          "score": 0,
-          "percentile": 0
+          "score": 0.00043,
+          "percentile": 0.11721
         },
         "metrics": [
           {
-            "source": "cna@vuldb.com",
-            "type": "Primary",
+            "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+            "type": "Secondary",
             "cvss_version": "3.1",
-            "vector_string": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:N/I:L/A:N",
+            "vector_string": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
             "attack_vector": "NETWORK",
-            "base_score": 2.40000009536743
-          },
-          {
-            "source": "cna@vuldb.com",
-            "type": "Secondary",
-            "cvss_version": "2.0",
-            "vector_string": "AV:N/AC:L/Au:M/C:N/I:P/A:N",
-            "attack_vector": "NETWORK",
-            "base_score": 3.29999995231628
-          },
-          {
-            "source": "cna@vuldb.com",
-            "type": "Secondary",
-            "cvss_version": "4.0",
-            "vector_string": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:P/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-            "attack_vector": "NETWORK",
-            "base_score": 4.80000019073486
+            "base_score": 9.80000019073486
           }
         ],
         "timeline": {
           "references": [
             {
               "type": "reference",
-              "url": "https://github.com/R2og/cve/blob/main/xss-r2og.md",
+              "url": "https://github.com/Chainmanner/GZDoom-Arbitrary-Code-Execution-via-ZScript-PoC",
               "source_type": "poc",
               "source": "nvd",
               "description": "",
-              "published": "2025-02-23T05:00:00.000Z"
+              "published": "2025-02-20T05:00:00.000Z"
+            },
+            {
+              "type": "reference",
+              "url": "https://github.com/Chainmanner/GZDoom-Arbitrary-Code-Execution-via-ZScript-PoC",
+              "source_type": "poc",
+              "source": "nvd",
+              "description": "",
+              "published": "2025-02-20T05:00:00.000Z"
+            },
+            {
+              "type": "reference",
+              "url": "https://packetstorm.news/download/189267",
+              "source_type": "poc",
+              "source": "packetstorm",
+              "description": "GZDoom 4.13.1 Remote Code Execution",
+              "published": "2025-02-17T05:00:00.000Z"
             }
           ],
           "repositories": []
@@ -632,11 +644,11 @@
     },
     {
       "cve": {
-        "id": "CVE-2025-1577",
-        "description": "A vulnerability, which was classified as problematic, has been found in code-projects Blood Bank System 1.0. Affected by this issue is some unknown functionality of the file /prostatus.php. The manipulation of the argument message leads to cross site scripting. The attack may be launched remotely. The exploit has been disclosed to the public and may be used.",
+        "id": "CVE-2025-1586",
+        "description": "A vulnerability was found in code-projects Blood Bank System 1.0. It has been declared as problematic. This vulnerability affects unknown code of the file /Blood/A-.php. The manipulation of the argument Bloodname leads to cross site scripting. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used.",
         "metadata": {
-          "published_date": "2025-02-23T07:15:08.970",
-          "last_modified_date": "2025-02-23T07:15:08.970",
+          "published_date": "2025-02-23T15:15:09.407",
+          "last_modified_date": "2025-02-23T15:15:09.407",
           "confidence_level": "medium",
           "severity": "medium"
         },
@@ -650,8 +662,8 @@
           "public_exploit_count": 1
         },
         "epss": {
-          "score": 0,
-          "percentile": 0
+          "score": 0.00068,
+          "percentile": 0.32673
         },
         "metrics": [
           {
@@ -683,7 +695,7 @@
           "references": [
             {
               "type": "reference",
-              "url": "https://github.com/heiheiworld/cve/blob/main/xss-h.md",
+              "url": "https://github.com/1337g/bloodbanksystem_poc/blob/main/xss-gu(1).pdf",
               "source_type": "poc",
               "source": "nvd",
               "description": "",
