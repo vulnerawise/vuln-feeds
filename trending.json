@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "timestamp": "2025-02-25T18:14:56Z"
+    "timestamp": "2025-02-25T20:12:08Z"
   },
   "data": [
     {
@@ -185,70 +185,6 @@
     },
     {
       "cve": {
-        "id": "CVE-2025-1611",
-        "description": "A vulnerability was found in ShopXO up to 6.4.0. It has been classified as problematic. This affects an unknown part of the file app/service/ThemeAdminService.php of the component Template Handler. The manipulation leads to injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-        "metadata": {
-          "published_date": "2025-02-24T02:15:32.437",
-          "last_modified_date": "2025-02-24T02:15:32.437",
-          "confidence_level": "medium",
-          "severity": "medium"
-        },
-        "impact": {
-          "cisa_kev": false,
-          "reported_exploited": false,
-          "exploit_maturity": "poc",
-          "automatable": false
-        },
-        "counts": {
-          "public_exploit_count": 1
-        },
-        "epss": {
-          "score": 0.00068,
-          "percentile": 0.32673
-        },
-        "metrics": [
-          {
-            "source": "cna@vuldb.com",
-            "type": "Secondary",
-            "cvss_version": "4.0",
-            "vector_string": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-            "attack_vector": "NETWORK",
-            "base_score": 5.09999990463257
-          },
-          {
-            "source": "cna@vuldb.com",
-            "type": "Primary",
-            "cvss_version": "3.1",
-            "vector_string": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:L/A:L",
-            "attack_vector": "NETWORK",
-            "base_score": 4.69999980926514
-          },
-          {
-            "source": "cna@vuldb.com",
-            "type": "Secondary",
-            "cvss_version": "2.0",
-            "vector_string": "AV:N/AC:L/Au:M/C:P/I:P/A:P",
-            "attack_vector": "NETWORK",
-            "base_score": 5.80000019073486
-          }
-        ],
-        "timeline": {
-          "references": [
-            {
-              "type": "reference",
-              "url": "https://github.com/jmx0hxq/Vulnerability-learning/blob/main/shopxo-rce.md",
-              "source_type": "poc",
-              "source": "nvd",
-              "description": "",
-              "published": "2025-02-24T05:00:00.000Z"
-            }
-          ],
-          "repositories": []
-        }
-      }
-    },
-    {
-      "cve": {
         "id": "CVE-2025-0108",
         "description": "An authentication bypass in the Palo Alto Networks PAN-OS software enables an unauthenticated attacker with network access to the management web interface to bypass the authentication otherwise required by the PAN-OS management web interface and invoke certain PHP scripts. While invoking these PHP scripts does not enable remote code execution, it can negatively impact integrity and confidentiality of PAN-OS.\n\nYou can greatly reduce the risk of this issue by restricting access to the management web interface to only trusted internal IP addresses according to our recommended  best practices deployment guidelines https://live.paloaltonetworks.com/t5/community-blogs/tips-amp-tricks-how-to-secure-the-management-access-of-your-palo/ba-p/464431 .\n\nThis issue does not affect Cloud NGFW or Prisma Access software.",
         "metadata": {
@@ -388,6 +324,70 @@
     },
     {
       "cve": {
+        "id": "CVE-2025-1611",
+        "description": "A vulnerability was found in ShopXO up to 6.4.0. It has been classified as problematic. This affects an unknown part of the file app/service/ThemeAdminService.php of the component Template Handler. The manipulation leads to injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+        "metadata": {
+          "published_date": "2025-02-24T02:15:32.437",
+          "last_modified_date": "2025-02-24T02:15:32.437",
+          "confidence_level": "medium",
+          "severity": "medium"
+        },
+        "impact": {
+          "cisa_kev": false,
+          "reported_exploited": false,
+          "exploit_maturity": "poc",
+          "automatable": false
+        },
+        "counts": {
+          "public_exploit_count": 1
+        },
+        "epss": {
+          "score": 0.00068,
+          "percentile": 0.32673
+        },
+        "metrics": [
+          {
+            "source": "cna@vuldb.com",
+            "type": "Secondary",
+            "cvss_version": "4.0",
+            "vector_string": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+            "attack_vector": "NETWORK",
+            "base_score": 5.09999990463257
+          },
+          {
+            "source": "cna@vuldb.com",
+            "type": "Primary",
+            "cvss_version": "3.1",
+            "vector_string": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:L/A:L",
+            "attack_vector": "NETWORK",
+            "base_score": 4.69999980926514
+          },
+          {
+            "source": "cna@vuldb.com",
+            "type": "Secondary",
+            "cvss_version": "2.0",
+            "vector_string": "AV:N/AC:L/Au:M/C:P/I:P/A:P",
+            "attack_vector": "NETWORK",
+            "base_score": 5.80000019073486
+          }
+        ],
+        "timeline": {
+          "references": [
+            {
+              "type": "reference",
+              "url": "https://github.com/jmx0hxq/Vulnerability-learning/blob/main/shopxo-rce.md",
+              "source_type": "poc",
+              "source": "nvd",
+              "description": "",
+              "published": "2025-02-24T05:00:00.000Z"
+            }
+          ],
+          "repositories": []
+        }
+      }
+    },
+    {
+      "cve": {
         "id": "CVE-2025-1597",
         "description": "A vulnerability was found in SourceCodester Best Church Management Software 1.0. It has been classified as problematic. Affected is an unknown function of the file /admin/redirect.php. The manipulation of the argument a leads to cross site scripting. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
         "metadata": {
@@ -516,62 +516,6 @@
     },
     {
       "cve": {
-        "id": "CVE-2025-1467",
-        "description": "Versions of the package tarteaucitronjs before 1.17.0 are vulnerable to Cross-site Scripting (XSS) via the getElemWidth() and getElemHeight(). This is related to [SNYK-JS-TARTEAUCITRONJS-8366541](https://security.snyk.io/vuln/SNYK-JS-TARTEAUCITRONJS-8366541)",
-        "metadata": {
-          "published_date": "2025-02-23T16:15:08.400",
-          "last_modified_date": "2025-02-23T16:15:08.400",
-          "confidence_level": "low",
-          "severity": "medium"
-        },
-        "impact": {
-          "cisa_kev": false,
-          "reported_exploited": false,
-          "exploit_maturity": "poc",
-          "automatable": false
-        },
-        "counts": {
-          "public_exploit_count": 1
-        },
-        "epss": {
-          "score": 0.00045,
-          "percentile": 0.17964
-        },
-        "metrics": [
-          {
-            "source": "report@snyk.io",
-            "type": "Secondary",
-            "cvss_version": "4.0",
-            "vector_string": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:N/VI:L/VA:N/SC:L/SI:L/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-            "attack_vector": "NETWORK",
-            "base_score": 5.09999990463257
-          },
-          {
-            "source": "report@snyk.io",
-            "type": "Secondary",
-            "cvss_version": "3.1",
-            "vector_string": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
-            "attack_vector": "NETWORK",
-            "base_score": 6.09999990463257
-          }
-        ],
-        "timeline": {
-          "references": [
-            {
-              "type": "reference",
-              "url": "https://gist.github.com/Rudloff/d48f525215bd5426cbb076116c4422dd",
-              "source_type": "poc",
-              "source": "nvd",
-              "description": "",
-              "published": "2025-02-23T05:00:00.000Z"
-            }
-          ],
-          "repositories": []
-        }
-      }
-    },
-    {
-      "cve": {
         "id": "CVE-2024-55457",
         "description": "MasterSAM Star Gate 11 is vulnerable to directory traversal via /adama/adama/downloadService. An attacker can exploit this vulnerability by manipulating the file parameter to access arbitrary files on the server, potentially exposing sensitive information.",
         "metadata": {
@@ -635,6 +579,62 @@
               "last_modified": "2025-01-05T09:19:35Z"
             }
           ]
+        }
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-1467",
+        "description": "Versions of the package tarteaucitronjs before 1.17.0 are vulnerable to Cross-site Scripting (XSS) via the getElemWidth() and getElemHeight(). This is related to [SNYK-JS-TARTEAUCITRONJS-8366541](https://security.snyk.io/vuln/SNYK-JS-TARTEAUCITRONJS-8366541)",
+        "metadata": {
+          "published_date": "2025-02-23T16:15:08.400",
+          "last_modified_date": "2025-02-23T16:15:08.400",
+          "confidence_level": "low",
+          "severity": "medium"
+        },
+        "impact": {
+          "cisa_kev": false,
+          "reported_exploited": false,
+          "exploit_maturity": "poc",
+          "automatable": false
+        },
+        "counts": {
+          "public_exploit_count": 1
+        },
+        "epss": {
+          "score": 0.00045,
+          "percentile": 0.17964
+        },
+        "metrics": [
+          {
+            "source": "report@snyk.io",
+            "type": "Secondary",
+            "cvss_version": "4.0",
+            "vector_string": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:N/VI:L/VA:N/SC:L/SI:L/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+            "attack_vector": "NETWORK",
+            "base_score": 5.09999990463257
+          },
+          {
+            "source": "report@snyk.io",
+            "type": "Secondary",
+            "cvss_version": "3.1",
+            "vector_string": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+            "attack_vector": "NETWORK",
+            "base_score": 6.09999990463257
+          }
+        ],
+        "timeline": {
+          "references": [
+            {
+              "type": "reference",
+              "url": "https://gist.github.com/Rudloff/d48f525215bd5426cbb076116c4422dd",
+              "source_type": "poc",
+              "source": "nvd",
+              "description": "",
+              "published": "2025-02-23T05:00:00.000Z"
+            }
+          ],
+          "repositories": []
         }
       }
     },
