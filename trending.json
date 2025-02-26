@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "timestamp": "2025-02-26T02:45:15Z"
+    "timestamp": "2025-02-26T04:13:39Z"
   },
   "data": [
     {
@@ -271,141 +271,6 @@
     },
     {
       "cve": {
-        "id": "CVE-2025-1632",
-        "description": "A vulnerability was found in libarchive up to 3.7.7. It has been classified as problematic. This affects the function list of the file bsdunzip.c. The manipulation leads to null pointer dereference. It is possible to launch the attack on the local host. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-        "metadata": {
-          "published_date": "2025-02-24T14:15:11.590",
-          "last_modified_date": "2025-02-24T15:15:13.217",
-          "confidence_level": "medium",
-          "severity": "medium"
-        },
-        "impact": {
-          "cisa_kev": false,
-          "reported_exploited": false,
-          "exploit_maturity": "poc",
-          "automatable": false
-        },
-        "counts": {
-          "public_exploit_count": 1
-        },
-        "epss": {
-          "score": 0,
-          "percentile": 0
-        },
-        "metrics": [
-          {
-            "source": "cna@vuldb.com",
-            "type": "Secondary",
-            "cvss_version": "3.1",
-            "vector_string": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
-            "attack_vector": "LOCAL",
-            "base_score": 3.29999995231628
-          },
-          {
-            "source": "cna@vuldb.com",
-            "type": "Secondary",
-            "cvss_version": "2.0",
-            "vector_string": "AV:L/AC:L/Au:S/C:N/I:N/A:P",
-            "attack_vector": "LOCAL",
-            "base_score": 1.70000004768372
-          },
-          {
-            "source": "cna@vuldb.com",
-            "type": "Secondary",
-            "cvss_version": "4.0",
-            "vector_string": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-            "attack_vector": "LOCAL",
-            "base_score": 4.80000019073486
-          }
-        ],
-        "timeline": {
-          "references": [
-            {
-              "type": "reference",
-              "url": "https://github.com/Ekkosun/pocs/blob/main/bsdunzip-poc",
-              "source_type": "poc",
-              "source": "nvd",
-              "description": "",
-              "published": "2025-02-24T05:00:00.000Z"
-            }
-          ],
-          "repositories": []
-        }
-      }
-    },
-    {
-      "cve": {
-        "id": "CVE-2025-24893",
-        "description": "XWiki Platform is a generic wiki platform offering runtime services for applications built on top of it. Any guest can perform arbitrary remote code execution through a request to `SolrSearch`. This impacts the confidentiality, integrity and availability of the whole XWiki installation. To reproduce on an instance, without being logged in, go to `\u003chost\u003e/xwiki/bin/get/Main/SolrSearch?media=rss\u0026text=%7D%7D%7D%7B%7Basync%20async%3Dfalse%7D%7D%7B%7Bgroovy%7D%7Dprintln%28\"Hello%20from\"%20%2B%20\"%20search%20text%3A\"%20%2B%20%2823%20%2B%2019%29%29%7B%7B%2Fgroovy%7D%7D%7B%7B%2Fasync%7D%7D%20`. If there is an output, and the title of the RSS feed contains `Hello from search text:42`, then the instance is vulnerable. This vulnerability has been patched in XWiki 15.10.11, 16.4.1 and 16.5.0RC1. Users are advised to upgrade. Users unable to upgrade may edit `Main.SolrSearchMacros` in `SolrSearchMacros.xml` on line 955 to match the `rawResponse` macro in `macros.vm#L2824` with a content type of `application/xml`, instead of simply outputting the content of the feed.",
-        "metadata": {
-          "published_date": "2025-02-20T20:15:46.697",
-          "last_modified_date": "2025-02-20T20:15:46.697",
-          "confidence_level": "medium",
-          "severity": "critical"
-        },
-        "impact": {
-          "cisa_kev": false,
-          "reported_exploited": false,
-          "exploit_maturity": "weaponized",
-          "automatable": true
-        },
-        "counts": {
-          "public_exploit_count": 3
-        },
-        "epss": {
-          "score": 0.00045,
-          "percentile": 0.18015
-        },
-        "metrics": [
-          {
-            "source": "security-advisories@github.com",
-            "type": "Secondary",
-            "cvss_version": "3.1",
-            "vector_string": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-            "attack_vector": "NETWORK",
-            "base_score": 9.80000019073486
-          }
-        ],
-        "timeline": {
-          "references": [
-            {
-              "type": "reference",
-              "url": "https://github.com/projectdiscovery/nuclei-templates/blob/main/http/cves/2025/CVE-2025-24893.yaml",
-              "source_type": "weapon",
-              "source": "nuclei",
-              "description": "XWiki Platform - Remote Code Execution",
-              "published": "2025-02-25T05:00:00.000Z"
-            }
-          ],
-          "repositories": [
-            {
-              "type": "repository",
-              "url": "https://github.com/sug4r-wr41th/CVE-2025-24893",
-              "repo_name": "sug4r-wr41th/CVE-2025-24893",
-              "description": "XWiki Remote Code Execution (CVE-2025-24893) PoC ",
-              "forks": 0,
-              "stars": 0,
-              "published": "2025-02-24T23:46:54Z",
-              "created": "2025-02-24T23:22:49Z",
-              "last_modified": "2025-02-24T23:48:50Z"
-            },
-            {
-              "type": "repository",
-              "url": "https://github.com/iSee857/CVE-2025-24893-PoC",
-              "repo_name": "iSee857/CVE-2025-24893-PoC",
-              "description": "XWiki SolrSearchMacros 远程代码执行漏洞PoC（CVE-2025-24893）",
-              "forks": 0,
-              "stars": 2,
-              "published": "2025-02-25T07:18:51Z",
-              "created": "2025-02-25T07:11:51Z",
-              "last_modified": "2025-02-25T16:22:49Z"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "cve": {
         "id": "CVE-2025-24989",
         "description": "An improper access control vulnerability in Power Pages allows an unauthorized attacker to elevate privileges over a network potentially bypassing the user registration control.\nThis vulnerability has already been mitigated in the service and all affected customers have been notified. This update addressed the registration control bypass. Affected customers have been given instructions on reviewing their sites for potential exploitation and clean up methods. If you've not been notified this vulnerability does not affect you.",
         "metadata": {
@@ -594,6 +459,141 @@
               "published": "2025-02-19T06:29:56Z",
               "created": "2025-02-19T06:19:33Z",
               "last_modified": "2025-02-19T06:33:00Z"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-1632",
+        "description": "A vulnerability was found in libarchive up to 3.7.7. It has been classified as problematic. This affects the function list of the file bsdunzip.c. The manipulation leads to null pointer dereference. It is possible to launch the attack on the local host. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+        "metadata": {
+          "published_date": "2025-02-24T14:15:11.590",
+          "last_modified_date": "2025-02-24T15:15:13.217",
+          "confidence_level": "medium",
+          "severity": "medium"
+        },
+        "impact": {
+          "cisa_kev": false,
+          "reported_exploited": false,
+          "exploit_maturity": "poc",
+          "automatable": false
+        },
+        "counts": {
+          "public_exploit_count": 1
+        },
+        "epss": {
+          "score": 0,
+          "percentile": 0
+        },
+        "metrics": [
+          {
+            "source": "cna@vuldb.com",
+            "type": "Secondary",
+            "cvss_version": "3.1",
+            "vector_string": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+            "attack_vector": "LOCAL",
+            "base_score": 3.29999995231628
+          },
+          {
+            "source": "cna@vuldb.com",
+            "type": "Secondary",
+            "cvss_version": "2.0",
+            "vector_string": "AV:L/AC:L/Au:S/C:N/I:N/A:P",
+            "attack_vector": "LOCAL",
+            "base_score": 1.70000004768372
+          },
+          {
+            "source": "cna@vuldb.com",
+            "type": "Secondary",
+            "cvss_version": "4.0",
+            "vector_string": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+            "attack_vector": "LOCAL",
+            "base_score": 4.80000019073486
+          }
+        ],
+        "timeline": {
+          "references": [
+            {
+              "type": "reference",
+              "url": "https://github.com/Ekkosun/pocs/blob/main/bsdunzip-poc",
+              "source_type": "poc",
+              "source": "nvd",
+              "description": "",
+              "published": "2025-02-24T05:00:00.000Z"
+            }
+          ],
+          "repositories": []
+        }
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-24893",
+        "description": "XWiki Platform is a generic wiki platform offering runtime services for applications built on top of it. Any guest can perform arbitrary remote code execution through a request to `SolrSearch`. This impacts the confidentiality, integrity and availability of the whole XWiki installation. To reproduce on an instance, without being logged in, go to `\u003chost\u003e/xwiki/bin/get/Main/SolrSearch?media=rss\u0026text=%7D%7D%7D%7B%7Basync%20async%3Dfalse%7D%7D%7B%7Bgroovy%7D%7Dprintln%28\"Hello%20from\"%20%2B%20\"%20search%20text%3A\"%20%2B%20%2823%20%2B%2019%29%29%7B%7B%2Fgroovy%7D%7D%7B%7B%2Fasync%7D%7D%20`. If there is an output, and the title of the RSS feed contains `Hello from search text:42`, then the instance is vulnerable. This vulnerability has been patched in XWiki 15.10.11, 16.4.1 and 16.5.0RC1. Users are advised to upgrade. Users unable to upgrade may edit `Main.SolrSearchMacros` in `SolrSearchMacros.xml` on line 955 to match the `rawResponse` macro in `macros.vm#L2824` with a content type of `application/xml`, instead of simply outputting the content of the feed.",
+        "metadata": {
+          "published_date": "2025-02-20T20:15:46.697",
+          "last_modified_date": "2025-02-20T20:15:46.697",
+          "confidence_level": "medium",
+          "severity": "critical"
+        },
+        "impact": {
+          "cisa_kev": false,
+          "reported_exploited": false,
+          "exploit_maturity": "weaponized",
+          "automatable": true
+        },
+        "counts": {
+          "public_exploit_count": 3
+        },
+        "epss": {
+          "score": 0.00045,
+          "percentile": 0.18015
+        },
+        "metrics": [
+          {
+            "source": "security-advisories@github.com",
+            "type": "Secondary",
+            "cvss_version": "3.1",
+            "vector_string": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+            "attack_vector": "NETWORK",
+            "base_score": 9.80000019073486
+          }
+        ],
+        "timeline": {
+          "references": [
+            {
+              "type": "reference",
+              "url": "https://github.com/projectdiscovery/nuclei-templates/blob/main/http/cves/2025/CVE-2025-24893.yaml",
+              "source_type": "weapon",
+              "source": "nuclei",
+              "description": "XWiki Platform - Remote Code Execution",
+              "published": "2025-02-25T05:00:00.000Z"
+            }
+          ],
+          "repositories": [
+            {
+              "type": "repository",
+              "url": "https://github.com/sug4r-wr41th/CVE-2025-24893",
+              "repo_name": "sug4r-wr41th/CVE-2025-24893",
+              "description": "XWiki Remote Code Execution (CVE-2025-24893) PoC ",
+              "forks": 0,
+              "stars": 0,
+              "published": "2025-02-24T23:46:54Z",
+              "created": "2025-02-24T23:22:49Z",
+              "last_modified": "2025-02-24T23:48:50Z"
+            },
+            {
+              "type": "repository",
+              "url": "https://github.com/iSee857/CVE-2025-24893-PoC",
+              "repo_name": "iSee857/CVE-2025-24893-PoC",
+              "description": "XWiki SolrSearchMacros 远程代码执行漏洞PoC（CVE-2025-24893）",
+              "forks": 0,
+              "stars": 2,
+              "published": "2025-02-25T07:18:51Z",
+              "created": "2025-02-25T07:11:51Z",
+              "last_modified": "2025-02-25T16:22:49Z"
             }
           ]
         }
