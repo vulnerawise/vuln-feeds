@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "timestamp": "2025-02-26T00:48:59Z"
+    "timestamp": "2025-02-26T02:45:15Z"
   },
   "data": [
     {
@@ -340,7 +340,7 @@
         "metadata": {
           "published_date": "2025-02-20T20:15:46.697",
           "last_modified_date": "2025-02-20T20:15:46.697",
-          "confidence_level": "high",
+          "confidence_level": "medium",
           "severity": "critical"
         },
         "impact": {
