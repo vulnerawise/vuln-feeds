@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "timestamp": "2025-02-26T14:10:52Z"
+    "timestamp": "2025-02-26T16:13:27Z"
   },
   "data": [
     {
@@ -46,8 +46,7 @@
               "description": "",
               "published": "2025-02-25T05:00:00.000Z"
             }
-          ],
-          "repositories": []
+          ]
         }
       }
     },
@@ -94,8 +93,7 @@
               "description": "",
               "published": "2025-02-25T05:00:00.000Z"
             }
-          ],
-          "repositories": []
+          ]
         }
       }
     },
@@ -142,8 +140,7 @@
               "description": "",
               "published": "2025-02-25T05:00:00.000Z"
             }
-          ],
-          "repositories": []
+          ]
         }
       }
     },
@@ -181,29 +178,30 @@
           }
         ],
         "timeline": {
-          "references": [],
           "repositories": [
             {
               "type": "repository",
               "url": "https://github.com/Network-Sec/CVE-2025-21420-PoC",
-              "repo_name": "Network-Sec/CVE-2025-21420-PoC",
               "description": "We found a way to DLL sideload with cleanmgr.exe",
-              "forks": 14,
-              "stars": 60,
               "published": "2025-02-25T18:39:01Z",
               "created": "2025-02-17T08:59:22Z",
-              "last_modified": "2025-02-26T08:26:19Z"
+              "last_modified": "2025-02-26T08:26:19Z",
+              "repo_name": "Network-Sec/CVE-2025-21420-PoC",
+              "name": "",
+              "stars": 60,
+              "forks": 14
             },
             {
               "type": "repository",
               "url": "https://github.com/toxy4ny/edge-maradeur",
-              "repo_name": "toxy4ny/edge-maradeur",
               "description": "Exploiting a vulnerability in Windows Disk Cleanup to elevate privileges and provide access to protected data in Edge by bypassing the security feature. CVE-2025-21420 and CVE-2025-21401.",
-              "forks": 0,
-              "stars": 0,
               "published": "2025-02-20T15:20:50Z",
               "created": "2025-02-20T15:10:51Z",
-              "last_modified": "2025-02-20T15:20:54Z"
+              "last_modified": "2025-02-20T15:20:54Z",
+              "repo_name": "toxy4ny/edge-maradeur",
+              "name": "",
+              "stars": 0,
+              "forks": 0
             }
           ]
         }
@@ -281,68 +279,74 @@
             {
               "type": "repository",
               "url": "https://github.com/iSee857/CVE-2025-0108-PoC",
-              "repo_name": "iSee857/CVE-2025-0108-PoC",
               "description": "Palo Alto Networks PAN-OS 身份验证绕过漏洞批量检测脚本(CVE-2025-0108)",
-              "forks": 17,
-              "stars": 23,
               "published": "2025-02-13T06:43:21Z",
               "created": "2025-02-13T06:39:25Z",
-              "last_modified": "2025-02-26T07:40:32Z"
+              "last_modified": "2025-02-26T07:40:32Z",
+              "repo_name": "iSee857/CVE-2025-0108-PoC",
+              "name": "",
+              "stars": 23,
+              "forks": 17
             },
             {
               "type": "repository",
               "url": "https://github.com/FOLKS-iwd/CVE-2025-0108-PoC",
-              "repo_name": "FOLKS-iwd/CVE-2025-0108-PoC",
               "description": "This repository contains a Proof of Concept (PoC) for the **CVE-2025-0108** vulnerability, which is an **authentication bypass** issue in Palo Alto Networks' PAN-OS software. The scripts provided here test for the vulnerability by sending a crafted HTTP request to the target systems.",
-              "forks": 0,
-              "stars": 6,
               "published": "2025-02-14T13:50:44Z",
               "created": "2025-02-14T13:22:37Z",
-              "last_modified": "2025-02-24T10:24:47Z"
+              "last_modified": "2025-02-24T10:24:47Z",
+              "repo_name": "FOLKS-iwd/CVE-2025-0108-PoC",
+              "name": "",
+              "stars": 6,
+              "forks": 0
             },
             {
               "type": "repository",
               "url": "https://github.com/becrevex/CVE-2025-0108",
-              "repo_name": "becrevex/CVE-2025-0108",
               "description": "NSE script that checks for CVE-2025-0108 vulnerability in Palo Alto Networks PAN-OS",
-              "forks": 0,
-              "stars": 0,
               "published": "2025-02-19T17:00:11Z",
               "created": "2025-02-19T16:57:58Z",
-              "last_modified": "2025-02-19T17:00:15Z"
+              "last_modified": "2025-02-19T17:00:15Z",
+              "repo_name": "becrevex/CVE-2025-0108",
+              "name": "",
+              "stars": 0,
+              "forks": 0
             },
             {
               "type": "repository",
               "url": "https://github.com/sohaibeb/CVE-2025-0108",
-              "repo_name": "sohaibeb/CVE-2025-0108",
               "description": "PAN-OS CVE POC SCRIPT",
-              "forks": 0,
-              "stars": 0,
               "published": "2025-02-20T07:48:16Z",
               "created": "2025-02-19T16:00:04Z",
-              "last_modified": "2025-02-20T07:48:19Z"
+              "last_modified": "2025-02-20T07:48:19Z",
+              "repo_name": "sohaibeb/CVE-2025-0108",
+              "name": "",
+              "stars": 0,
+              "forks": 0
             },
             {
               "type": "repository",
               "url": "https://github.com/fr4nc1stein/CVE-2025-0108-SCAN",
-              "repo_name": "fr4nc1stein/CVE-2025-0108-SCAN",
               "description": " Detects an authentication bypass vulnerability in Palo Alto PAN-OS (CVE-2025-0108).",
-              "forks": 1,
-              "stars": 1,
               "published": "2025-02-18T22:05:23Z",
               "created": "2025-02-18T21:04:45Z",
-              "last_modified": "2025-02-21T02:11:05Z"
+              "last_modified": "2025-02-21T02:11:05Z",
+              "repo_name": "fr4nc1stein/CVE-2025-0108-SCAN",
+              "name": "",
+              "stars": 1,
+              "forks": 1
             },
             {
               "type": "repository",
               "url": "https://github.com/barcrange/CVE-2025-0108-Authentication-Bypass-checker",
-              "repo_name": "barcrange/CVE-2025-0108-Authentication-Bypass-checker",
               "description": "",
-              "forks": 0,
-              "stars": 0,
               "published": "2025-02-19T06:29:56Z",
               "created": "2025-02-19T06:19:33Z",
-              "last_modified": "2025-02-19T06:33:00Z"
+              "last_modified": "2025-02-19T06:33:00Z",
+              "repo_name": "barcrange/CVE-2025-0108-Authentication-Bypass-checker",
+              "name": "",
+              "stars": 0,
+              "forks": 0
             }
           ]
         }
@@ -399,8 +403,7 @@
               "description": "Microsoft Power Pages contains an improper access control vulnerability that allows an unauthorized attacker to elevate privileges over a network potentially bypassing the user registration control.. knownRansomwareCampaignUse = Unknown",
               "published": "2025-02-21"
             }
-          ],
-          "repositories": []
+          ]
         }
       }
     },
@@ -452,13 +455,14 @@
             {
               "type": "repository",
               "url": "https://github.com/jcarabantes/CVE-2024-54820",
-              "repo_name": "jcarabantes/CVE-2024-54820",
               "description": "Vuln disclosure for XOne app",
-              "forks": 0,
-              "stars": 1,
               "published": "2025-02-22T20:29:16Z",
               "created": "2024-11-17T12:31:23Z",
-              "last_modified": "2025-02-24T23:07:21Z"
+              "last_modified": "2025-02-24T23:07:21Z",
+              "repo_name": "jcarabantes/CVE-2024-54820",
+              "name": "",
+              "stars": 1,
+              "forks": 0
             }
           ]
         }
@@ -512,24 +516,26 @@
             {
               "type": "repository",
               "url": "https://github.com/sug4r-wr41th/CVE-2025-24893",
-              "repo_name": "sug4r-wr41th/CVE-2025-24893",
               "description": "XWiki Remote Code Execution (CVE-2025-24893) PoC ",
-              "forks": 0,
-              "stars": 0,
               "published": "2025-02-24T23:46:54Z",
               "created": "2025-02-24T23:22:49Z",
-              "last_modified": "2025-02-24T23:48:50Z"
+              "last_modified": "2025-02-24T23:48:50Z",
+              "repo_name": "sug4r-wr41th/CVE-2025-24893",
+              "name": "",
+              "stars": 0,
+              "forks": 0
             },
             {
               "type": "repository",
               "url": "https://github.com/iSee857/CVE-2025-24893-PoC",
-              "repo_name": "iSee857/CVE-2025-24893-PoC",
               "description": "XWiki SolrSearchMacros 远程代码执行漏洞PoC（CVE-2025-24893）",
-              "forks": 0,
-              "stars": 3,
               "published": "2025-02-25T07:18:51Z",
               "created": "2025-02-25T07:11:51Z",
-              "last_modified": "2025-02-26T02:15:47Z"
+              "last_modified": "2025-02-26T02:15:47Z",
+              "repo_name": "iSee857/CVE-2025-24893-PoC",
+              "name": "",
+              "stars": 3,
+              "forks": 0
             }
           ]
         }
@@ -594,8 +600,7 @@
               "description": "",
               "published": "2025-02-24T05:00:00.000Z"
             }
-          ],
-          "repositories": []
+          ]
         }
       }
     },
@@ -642,8 +647,7 @@
               "description": "DocsGPT - Unauthenticated Remote Code Execution",
               "published": "2025-02-25T05:00:00.000Z"
             }
-          ],
-          "repositories": []
+          ]
         }
       }
     }
