@@ -1,17 +1,17 @@
 {
   "metadata": {
-    "timestamp": "2025-02-26T22:10:09Z"
+    "timestamp": "2025-02-27T00:49:22Z"
   },
   "data": [
     {
       "cve": {
-        "id": "CVE-2024-34036",
-        "description": "An issue was discovered in O-RAN Near Realtime RIC I-Release. To exploit this vulnerability, an attacker can disrupt the initial connection between a gNB and the Near RT-RIC by inundating the system with a high volume of subscription requests via an xApp.",
+        "id": "CVE-2025-25827",
+        "description": "A Server-Side Request Forgery (SSRF) in the component sort.php of Emlog Pro v2.5.4 allows attackers to scan local and internal ports via supplying a crafted URL.",
         "metadata": {
-          "published_date": "2025-02-25T15:15:21.740",
-          "last_modified_date": "2025-02-25T20:15:34.660",
+          "published_date": "2025-02-26T15:15:28.747",
+          "last_modified_date": "2025-02-26T15:15:28.747",
           "confidence_level": "medium",
-          "severity": "medium"
+          "severity": ""
         },
         "impact": {
           "cisa_kev": false,
@@ -26,25 +26,15 @@
           "score": 0,
           "percentile": 0
         },
-        "metrics": [
-          {
-            "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
-            "type": "Secondary",
-            "cvss_version": "3.1",
-            "vector_string": "CVSS:3.1/AV:P/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
-            "attack_vector": "PHYSICAL",
-            "base_score": 4.30000019073486
-          }
-        ],
         "timeline": {
           "references": [
             {
               "type": "reference",
-              "url": "https://gist.github.com/fklement/3a43dbb9fb361dddd8db7703080ade0f",
+              "url": "https://github.com/Ka7arotto/emlog/blob/main/ssrf.md",
               "source_type": "poc",
               "source": "nvd",
               "description": "",
-              "published": "2025-02-25T05:00:00.000Z"
+              "published": "2025-02-26T05:00:00.000Z"
             }
           ]
         }
@@ -52,13 +42,13 @@
     },
     {
       "cve": {
-        "id": "CVE-2024-34035",
-        "description": "An issue was discovered in O-RAN Near Realtime RIC H-Release. To trigger the crashing of the e2mgr, an adversary must flood the system with a significant quantity of E2 Subscription Requests originating from an xApp.",
+        "id": "CVE-2025-25825",
+        "description": "A cross-site scripting (XSS) vulnerability in Emlog Pro v2.5.4 allows attackers to execute arbitrary web scripts or HTML via injecting a crafted payload into the Titile in the article category section.",
         "metadata": {
-          "published_date": "2025-02-25T15:15:21.630",
-          "last_modified_date": "2025-02-25T20:15:34.487",
+          "published_date": "2025-02-26T15:15:28.620",
+          "last_modified_date": "2025-02-26T15:15:28.620",
           "confidence_level": "medium",
-          "severity": "medium"
+          "severity": ""
         },
         "impact": {
           "cisa_kev": false,
@@ -73,25 +63,15 @@
           "score": 0,
           "percentile": 0
         },
-        "metrics": [
-          {
-            "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
-            "type": "Secondary",
-            "cvss_version": "3.1",
-            "vector_string": "CVSS:3.1/AV:P/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:H",
-            "attack_vector": "PHYSICAL",
-            "base_score": 5.69999980926514
-          }
-        ],
         "timeline": {
           "references": [
             {
               "type": "reference",
-              "url": "https://gist.github.com/fklement/3a43dbb9fb361dddd8db7703080ade0f",
+              "url": "https://github.com/Ka7arotto/emlog/blob/main/xss-4.md",
               "source_type": "poc",
               "source": "nvd",
               "description": "",
-              "published": "2025-02-25T05:00:00.000Z"
+              "published": "2025-02-26T05:00:00.000Z"
             }
           ]
         }
@@ -99,13 +79,13 @@
     },
     {
       "cve": {
-        "id": "CVE-2024-34034",
-        "description": "An issue was discovered in FlexRIC 2.0.0. It crashes during a Subscription Request denial-of-service (DoS) attack, triggered by an assertion error. An attacker must send a high number of E42 Subscription Requests to the Near-RT RIC component.",
+        "id": "CVE-2025-25823",
+        "description": "A cross-site scripting (XSS) vulnerability in Emlog Pro v2.5.4 allows attackers to execute arbitrary web scripts or HTML via injecting a crafted payload into the article header at /admin/article.php.",
         "metadata": {
-          "published_date": "2025-02-25T15:15:21.513",
-          "last_modified_date": "2025-02-25T20:15:34.273",
+          "published_date": "2025-02-26T15:15:28.497",
+          "last_modified_date": "2025-02-26T15:15:28.497",
           "confidence_level": "medium",
-          "severity": "medium"
+          "severity": ""
         },
         "impact": {
           "cisa_kev": false,
@@ -120,25 +100,15 @@
           "score": 0,
           "percentile": 0
         },
-        "metrics": [
-          {
-            "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
-            "type": "Secondary",
-            "cvss_version": "3.1",
-            "vector_string": "CVSS:3.1/AV:P/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:H",
-            "attack_vector": "PHYSICAL",
-            "base_score": 5.69999980926514
-          }
-        ],
         "timeline": {
           "references": [
             {
               "type": "reference",
-              "url": "https://gist.github.com/fklement/3a43dbb9fb361dddd8db7703080ade0f",
+              "url": "https://github.com/Ka7arotto/emlog/blob/main/xss-3.md",
               "source_type": "poc",
               "source": "nvd",
               "description": "",
-              "published": "2025-02-25T05:00:00.000Z"
+              "published": "2025-02-26T05:00:00.000Z"
             }
           ]
         }
@@ -146,410 +116,13 @@
     },
     {
       "cve": {
-        "id": "CVE-2025-21420",
-        "description": "Windows Disk Cleanup Tool Elevation of Privilege Vulnerability",
+        "id": "CVE-2025-25818",
+        "description": "A cross-site scripting (XSS) vulnerability in Emlog Pro v2.5.4 allows attackers to execute arbitrary web scripts or HTML via injecting a crafted payload into the postStrVar function at article_save.php.",
         "metadata": {
-          "published_date": "2025-02-11T18:15:40.427",
-          "last_modified_date": "2025-02-14T17:36:09.683",
-          "confidence_level": "high",
-          "severity": "high"
-        },
-        "impact": {
-          "cisa_kev": false,
-          "reported_exploited": false,
-          "exploit_maturity": "poc",
-          "automatable": false
-        },
-        "counts": {
-          "public_exploit_count": 2
-        },
-        "epss": {
-          "score": 0.00146,
-          "percentile": 0.51689
-        },
-        "metrics": [
-          {
-            "source": "secure@microsoft.com",
-            "type": "Primary",
-            "cvss_version": "3.1",
-            "vector_string": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-            "attack_vector": "LOCAL",
-            "base_score": 7.80000019073486
-          }
-        ],
-        "timeline": {
-          "repositories": [
-            {
-              "type": "repository",
-              "url": "https://github.com/Network-Sec/CVE-2025-21420-PoC",
-              "description": "We found a way to DLL sideload with cleanmgr.exe",
-              "published": "2025-02-25T18:39:01Z",
-              "created": "2025-02-17T08:59:22Z",
-              "last_modified": "2025-02-26T08:26:19Z",
-              "repo_name": "Network-Sec/CVE-2025-21420-PoC",
-              "name": "",
-              "stars": 60,
-              "forks": 14
-            },
-            {
-              "type": "repository",
-              "url": "https://github.com/toxy4ny/edge-maradeur",
-              "description": "Exploiting a vulnerability in Windows Disk Cleanup to elevate privileges and provide access to protected data in Edge by bypassing the security feature. CVE-2025-21420 and CVE-2025-21401.",
-              "published": "2025-02-20T15:20:50Z",
-              "created": "2025-02-20T15:10:51Z",
-              "last_modified": "2025-02-20T15:20:54Z",
-              "repo_name": "toxy4ny/edge-maradeur",
-              "name": "",
-              "stars": 0,
-              "forks": 0
-            }
-          ]
-        }
-      }
-    },
-    {
-      "cve": {
-        "id": "CVE-2025-0108",
-        "description": "An authentication bypass in the Palo Alto Networks PAN-OS software enables an unauthenticated attacker with network access to the management web interface to bypass the authentication otherwise required by the PAN-OS management web interface and invoke certain PHP scripts. While invoking these PHP scripts does not enable remote code execution, it can negatively impact integrity and confidentiality of PAN-OS.\n\nYou can greatly reduce the risk of this issue by restricting access to the management web interface to only trusted internal IP addresses according to our recommended  best practices deployment guidelines https://live.paloaltonetworks.com/t5/community-blogs/tips-amp-tricks-how-to-secure-the-management-access-of-your-palo/ba-p/464431 .\n\nThis issue does not affect Cloud NGFW or Prisma Access software.",
-        "metadata": {
-          "published_date": "2025-02-12T21:15:16.290",
-          "last_modified_date": "2025-02-20T03:15:12.317",
-          "confidence_level": "high",
-          "severity": "high"
-        },
-        "impact": {
-          "cisa_kev": true,
-          "reported_exploited": true,
-          "exploit_maturity": "active",
-          "automatable": true
-        },
-        "counts": {
-          "public_exploit_count": 9
-        },
-        "epss": {
-          "score": 0.95537,
-          "percentile": 0.99565
-        },
-        "metrics": [
-          {
-            "source": "nvd@nist.gov",
-            "type": "Primary",
-            "cvss_version": "3.1",
-            "vector_string": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
-            "attack_vector": "NETWORK",
-            "base_score": 9.10000038146973
-          },
-          {
-            "source": "psirt@paloaltonetworks.com",
-            "type": "Secondary",
-            "cvss_version": "4.0",
-            "vector_string": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:N/R:U/V:C/RE:M/U:Red",
-            "attack_vector": "NETWORK",
-            "base_score": 8.80000019073486
-          }
-        ],
-        "timeline": {
-          "references": [
-            {
-              "type": "reference",
-              "url": "https://github.com/iSee857/CVE-2025-0108-PoC",
-              "source_type": "poc",
-              "source": "nvd",
-              "description": "",
-              "published": "2025-02-12T05:00:00.000Z"
-            },
-            {
-              "type": "reference",
-              "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json#CVE-2025-0108",
-              "source_type": "exploited",
-              "source": "cisa",
-              "description": "Palo Alto Networks PAN-OS contains an authentication bypass vulnerability in its management web interface. This vulnerability allows an unauthenticated attacker with network access to the management web interface to bypass the authentication normally required and invoke certain PHP scripts.. knownRansomwareCampaignUse = Unknown",
-              "published": "2025-02-18"
-            },
-            {
-              "type": "reference",
-              "url": "https://github.com/projectdiscovery/nuclei-templates/blob/main/http/cves/2025/CVE-2025-0108.yaml",
-              "source_type": "weapon",
-              "source": "nuclei",
-              "description": "PAN-OS Management Interface - Path Confusion to Authentication Bypass",
-              "published": "2025-02-13T05:00:00.000Z"
-            }
-          ],
-          "repositories": [
-            {
-              "type": "repository",
-              "url": "https://github.com/iSee857/CVE-2025-0108-PoC",
-              "description": "Palo Alto Networks PAN-OS 身份验证绕过漏洞批量检测脚本(CVE-2025-0108)",
-              "published": "2025-02-13T06:43:21Z",
-              "created": "2025-02-13T06:39:25Z",
-              "last_modified": "2025-02-26T07:40:32Z",
-              "repo_name": "iSee857/CVE-2025-0108-PoC",
-              "name": "",
-              "stars": 23,
-              "forks": 17
-            },
-            {
-              "type": "repository",
-              "url": "https://github.com/FOLKS-iwd/CVE-2025-0108-PoC",
-              "description": "This repository contains a Proof of Concept (PoC) for the **CVE-2025-0108** vulnerability, which is an **authentication bypass** issue in Palo Alto Networks' PAN-OS software. The scripts provided here test for the vulnerability by sending a crafted HTTP request to the target systems.",
-              "published": "2025-02-14T13:50:44Z",
-              "created": "2025-02-14T13:22:37Z",
-              "last_modified": "2025-02-24T10:24:47Z",
-              "repo_name": "FOLKS-iwd/CVE-2025-0108-PoC",
-              "name": "",
-              "stars": 6,
-              "forks": 0
-            },
-            {
-              "type": "repository",
-              "url": "https://github.com/becrevex/CVE-2025-0108",
-              "description": "NSE script that checks for CVE-2025-0108 vulnerability in Palo Alto Networks PAN-OS",
-              "published": "2025-02-19T17:00:11Z",
-              "created": "2025-02-19T16:57:58Z",
-              "last_modified": "2025-02-19T17:00:15Z",
-              "repo_name": "becrevex/CVE-2025-0108",
-              "name": "",
-              "stars": 0,
-              "forks": 0
-            },
-            {
-              "type": "repository",
-              "url": "https://github.com/sohaibeb/CVE-2025-0108",
-              "description": "PAN-OS CVE POC SCRIPT",
-              "published": "2025-02-20T07:48:16Z",
-              "created": "2025-02-19T16:00:04Z",
-              "last_modified": "2025-02-20T07:48:19Z",
-              "repo_name": "sohaibeb/CVE-2025-0108",
-              "name": "",
-              "stars": 0,
-              "forks": 0
-            },
-            {
-              "type": "repository",
-              "url": "https://github.com/fr4nc1stein/CVE-2025-0108-SCAN",
-              "description": " Detects an authentication bypass vulnerability in Palo Alto PAN-OS (CVE-2025-0108).",
-              "published": "2025-02-18T22:05:23Z",
-              "created": "2025-02-18T21:04:45Z",
-              "last_modified": "2025-02-21T02:11:05Z",
-              "repo_name": "fr4nc1stein/CVE-2025-0108-SCAN",
-              "name": "",
-              "stars": 1,
-              "forks": 1
-            },
-            {
-              "type": "repository",
-              "url": "https://github.com/barcrange/CVE-2025-0108-Authentication-Bypass-checker",
-              "description": "",
-              "published": "2025-02-19T06:29:56Z",
-              "created": "2025-02-19T06:19:33Z",
-              "last_modified": "2025-02-19T06:33:00Z",
-              "repo_name": "barcrange/CVE-2025-0108-Authentication-Bypass-checker",
-              "name": "",
-              "stars": 0,
-              "forks": 0
-            }
-          ]
-        }
-      }
-    },
-    {
-      "cve": {
-        "id": "CVE-2025-24989",
-        "description": "An improper access control vulnerability in Power Pages allows an unauthorized attacker to elevate privileges over a network potentially bypassing the user registration control.\nThis vulnerability has already been mitigated in the service and all affected customers have been notified. This update addressed the registration control bypass. Affected customers have been given instructions on reviewing their sites for potential exploitation and clean up methods. If you've not been notified this vulnerability does not affect you.",
-        "metadata": {
-          "published_date": "2025-02-19T23:15:15.167",
-          "last_modified_date": "2025-02-24T14:55:58.823",
-          "confidence_level": "high",
-          "severity": "critical"
-        },
-        "impact": {
-          "cisa_kev": true,
-          "reported_exploited": true,
-          "exploit_maturity": "active",
-          "automatable": true
-        },
-        "counts": {
-          "public_exploit_count": 1
-        },
-        "epss": {
-          "score": 0.02321,
-          "percentile": 0.89635
-        },
-        "metrics": [
-          {
-            "source": "nvd@nist.gov",
-            "type": "Primary",
-            "cvss_version": "3.1",
-            "vector_string": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-            "attack_vector": "NETWORK",
-            "base_score": 9.80000019073486
-          },
-          {
-            "source": "secure@microsoft.com",
-            "type": "Secondary",
-            "cvss_version": "3.1",
-            "vector_string": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:N",
-            "attack_vector": "NETWORK",
-            "base_score": 8.19999980926514
-          }
-        ],
-        "timeline": {
-          "references": [
-            {
-              "type": "reference",
-              "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json#CVE-2025-24989",
-              "source_type": "exploited",
-              "source": "cisa",
-              "description": "Microsoft Power Pages contains an improper access control vulnerability that allows an unauthorized attacker to elevate privileges over a network potentially bypassing the user registration control.. knownRansomwareCampaignUse = Unknown",
-              "published": "2025-02-21"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "cve": {
-        "id": "CVE-2025-24893",
-        "description": "XWiki Platform is a generic wiki platform offering runtime services for applications built on top of it. Any guest can perform arbitrary remote code execution through a request to `SolrSearch`. This impacts the confidentiality, integrity and availability of the whole XWiki installation. To reproduce on an instance, without being logged in, go to `\u003chost\u003e/xwiki/bin/get/Main/SolrSearch?media=rss\u0026text=%7D%7D%7D%7B%7Basync%20async%3Dfalse%7D%7D%7B%7Bgroovy%7D%7Dprintln%28\"Hello%20from\"%20%2B%20\"%20search%20text%3A\"%20%2B%20%2823%20%2B%2019%29%29%7B%7B%2Fgroovy%7D%7D%7B%7B%2Fasync%7D%7D%20`. If there is an output, and the title of the RSS feed contains `Hello from search text:42`, then the instance is vulnerable. This vulnerability has been patched in XWiki 15.10.11, 16.4.1 and 16.5.0RC1. Users are advised to upgrade. Users unable to upgrade may edit `Main.SolrSearchMacros` in `SolrSearchMacros.xml` on line 955 to match the `rawResponse` macro in `macros.vm#L2824` with a content type of `application/xml`, instead of simply outputting the content of the feed.",
-        "metadata": {
-          "published_date": "2025-02-20T20:15:46.697",
-          "last_modified_date": "2025-02-20T20:15:46.697",
+          "published_date": "2025-02-26T15:15:28.367",
+          "last_modified_date": "2025-02-26T15:15:28.367",
           "confidence_level": "medium",
-          "severity": "critical"
-        },
-        "impact": {
-          "cisa_kev": false,
-          "reported_exploited": false,
-          "exploit_maturity": "weaponized",
-          "automatable": true
-        },
-        "counts": {
-          "public_exploit_count": 3
-        },
-        "epss": {
-          "score": 0.00045,
-          "percentile": 0.18015
-        },
-        "metrics": [
-          {
-            "source": "security-advisories@github.com",
-            "type": "Secondary",
-            "cvss_version": "3.1",
-            "vector_string": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-            "attack_vector": "NETWORK",
-            "base_score": 9.80000019073486
-          }
-        ],
-        "timeline": {
-          "references": [
-            {
-              "type": "reference",
-              "url": "https://github.com/projectdiscovery/nuclei-templates/blob/main/http/cves/2025/CVE-2025-24893.yaml",
-              "source_type": "weapon",
-              "source": "nuclei",
-              "description": "XWiki Platform - Remote Code Execution",
-              "published": "2025-02-25T05:00:00.000Z"
-            }
-          ],
-          "repositories": [
-            {
-              "type": "repository",
-              "url": "https://github.com/sug4r-wr41th/CVE-2025-24893",
-              "description": "XWiki Remote Code Execution (CVE-2025-24893) PoC ",
-              "published": "2025-02-24T23:46:54Z",
-              "created": "2025-02-24T23:22:49Z",
-              "last_modified": "2025-02-24T23:48:50Z",
-              "repo_name": "sug4r-wr41th/CVE-2025-24893",
-              "name": "",
-              "stars": 0,
-              "forks": 0
-            },
-            {
-              "type": "repository",
-              "url": "https://github.com/iSee857/CVE-2025-24893-PoC",
-              "description": "XWiki SolrSearchMacros 远程代码执行漏洞PoC（CVE-2025-24893）",
-              "published": "2025-02-25T07:18:51Z",
-              "created": "2025-02-25T07:11:51Z",
-              "last_modified": "2025-02-26T02:15:47Z",
-              "repo_name": "iSee857/CVE-2025-24893-PoC",
-              "name": "",
-              "stars": 3,
-              "forks": 0
-            }
-          ]
-        }
-      }
-    },
-    {
-      "cve": {
-        "id": "CVE-2024-54820",
-        "description": "XOne Web Monitor v02.10.2024.530 framework 1.0.4.9 was discovered to contain a SQL injection vulnerability in the login page. This vulnerability allows attackers to extract all usernames and passwords via a crafted input.",
-        "metadata": {
-          "published_date": "2025-02-24T18:15:17.523",
-          "last_modified_date": "2025-02-24T18:15:17.523",
-          "confidence_level": "low",
-          "severity": "critical"
-        },
-        "impact": {
-          "cisa_kev": false,
-          "reported_exploited": false,
-          "exploit_maturity": "poc",
-          "automatable": true
-        },
-        "counts": {
-          "public_exploit_count": 2
-        },
-        "epss": {
-          "score": 0,
-          "percentile": 0
-        },
-        "metrics": [
-          {
-            "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
-            "type": "Secondary",
-            "cvss_version": "3.1",
-            "vector_string": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-            "attack_vector": "NETWORK",
-            "base_score": 9.80000019073486
-          }
-        ],
-        "timeline": {
-          "references": [
-            {
-              "type": "reference",
-              "url": "https://packetstorm.news/download/189389",
-              "source_type": "poc",
-              "source": "packetstorm",
-              "description": "XOne Web Monitor 02.10.2024.530 SQL Injection",
-              "published": "2025-02-24T05:00:00.000Z"
-            }
-          ],
-          "repositories": [
-            {
-              "type": "repository",
-              "url": "https://github.com/jcarabantes/CVE-2024-54820",
-              "description": "Vuln disclosure for XOne app",
-              "published": "2025-02-22T20:29:16Z",
-              "created": "2024-11-17T12:31:23Z",
-              "last_modified": "2025-02-24T23:07:21Z",
-              "repo_name": "jcarabantes/CVE-2024-54820",
-              "name": "",
-              "stars": 1,
-              "forks": 0
-            }
-          ]
-        }
-      }
-    },
-    {
-      "cve": {
-        "id": "CVE-2025-1632",
-        "description": "A vulnerability was found in libarchive up to 3.7.7. It has been classified as problematic. This affects the function list of the file bsdunzip.c. The manipulation leads to null pointer dereference. It is possible to launch the attack on the local host. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-        "metadata": {
-          "published_date": "2025-02-24T14:15:11.590",
-          "last_modified_date": "2025-02-24T15:15:13.217",
-          "confidence_level": "low",
-          "severity": "medium"
+          "severity": ""
         },
         "impact": {
           "cisa_kev": false,
@@ -564,41 +137,15 @@
           "score": 0,
           "percentile": 0
         },
-        "metrics": [
-          {
-            "source": "cna@vuldb.com",
-            "type": "Secondary",
-            "cvss_version": "3.1",
-            "vector_string": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
-            "attack_vector": "LOCAL",
-            "base_score": 3.29999995231628
-          },
-          {
-            "source": "cna@vuldb.com",
-            "type": "Secondary",
-            "cvss_version": "2.0",
-            "vector_string": "AV:L/AC:L/Au:S/C:N/I:N/A:P",
-            "attack_vector": "LOCAL",
-            "base_score": 1.70000004768372
-          },
-          {
-            "source": "cna@vuldb.com",
-            "type": "Secondary",
-            "cvss_version": "4.0",
-            "vector_string": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-            "attack_vector": "LOCAL",
-            "base_score": 4.80000019073486
-          }
-        ],
         "timeline": {
           "references": [
             {
               "type": "reference",
-              "url": "https://github.com/Ekkosun/pocs/blob/main/bsdunzip-poc",
+              "url": "https://github.com/Ka7arotto/emlog/blob/main/xss.md",
               "source_type": "poc",
               "source": "nvd",
               "description": "",
-              "published": "2025-02-24T05:00:00.000Z"
+              "published": "2025-02-26T05:00:00.000Z"
             }
           ]
         }
@@ -606,46 +153,221 @@
     },
     {
       "cve": {
-        "id": "CVE-2025-0868",
-        "description": "A vulnerability, that could result in Remote Code Execution (RCE), has been found in DocsGPT. Due to improper parsing of JSON data using eval() an unauthorized attacker could send arbitrary Python code to be executed via /api/remote endpoint.\n\nThis issue affects DocsGPT: from 0.8.1 through 0.12.0.",
+        "id": "CVE-2025-25813",
+        "description": "SeaCMS v13.3 was discovered to contain a remote code execution (RCE) vulnerability via the component admin_files.php.",
         "metadata": {
-          "published_date": "2025-02-20T12:15:10.893",
-          "last_modified_date": "2025-02-20T12:15:10.893",
+          "published_date": "2025-02-26T15:15:28.250",
+          "last_modified_date": "2025-02-26T15:15:28.250",
           "confidence_level": "medium",
-          "severity": "critical"
+          "severity": ""
         },
         "impact": {
           "cisa_kev": false,
           "reported_exploited": false,
-          "exploit_maturity": "weaponized",
-          "automatable": true
+          "exploit_maturity": "poc",
+          "automatable": false
         },
         "counts": {
           "public_exploit_count": 1
         },
         "epss": {
-          "score": 0.00045,
-          "percentile": 0.17956
+          "score": 0,
+          "percentile": 0
         },
-        "metrics": [
-          {
-            "source": "cvd@cert.pl",
-            "type": "Secondary",
-            "cvss_version": "4.0",
-            "vector_string": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-            "attack_vector": "NETWORK",
-            "base_score": 9.30000019073486
-          }
-        ],
         "timeline": {
           "references": [
             {
               "type": "reference",
-              "url": "https://github.com/projectdiscovery/nuclei-templates/blob/main/http/cves/2025/CVE-2025-0868.yaml",
-              "source_type": "weapon",
-              "source": "nuclei",
-              "description": "DocsGPT - Unauthenticated Remote Code Execution",
-              "published": "2025-02-25T05:00:00.000Z"
+              "url": "https://github.com/Ka7arotto/Seacms/blob/main/Seacms13.3-rce-5.md",
+              "source_type": "poc",
+              "source": "nvd",
+              "description": "",
+              "published": "2025-02-26T05:00:00.000Z"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-25802",
+        "description": "SeaCMS v13.3 was discovered to contain a remote code execution (RCE) vulnerability via the component admin_ip.php.",
+        "metadata": {
+          "published_date": "2025-02-26T15:15:28.127",
+          "last_modified_date": "2025-02-26T15:15:28.127",
+          "confidence_level": "medium",
+          "severity": ""
+        },
+        "impact": {
+          "cisa_kev": false,
+          "reported_exploited": false,
+          "exploit_maturity": "poc",
+          "automatable": false
+        },
+        "counts": {
+          "public_exploit_count": 1
+        },
+        "epss": {
+          "score": 0,
+          "percentile": 0
+        },
+        "timeline": {
+          "references": [
+            {
+              "type": "reference",
+              "url": "https://github.com/Ka7arotto/Seacms/blob/main/Seacms13.3-rce-2.md",
+              "source_type": "poc",
+              "source": "nvd",
+              "description": "",
+              "published": "2025-02-26T05:00:00.000Z"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-25797",
+        "description": "SeaCMS v13.3 was discovered to contain a remote code execution (RCE) vulnerability via the component admin_smtp.php.",
+        "metadata": {
+          "published_date": "2025-02-26T15:15:27.743",
+          "last_modified_date": "2025-02-26T15:15:27.743",
+          "confidence_level": "medium",
+          "severity": ""
+        },
+        "impact": {
+          "cisa_kev": false,
+          "reported_exploited": false,
+          "exploit_maturity": "poc",
+          "automatable": false
+        },
+        "counts": {
+          "public_exploit_count": 1
+        },
+        "epss": {
+          "score": 0,
+          "percentile": 0
+        },
+        "timeline": {
+          "references": [
+            {
+              "type": "reference",
+              "url": "https://github.com/Ka7arotto/Seacms/blob/main/Seacms13.3-rce-7.md",
+              "source_type": "poc",
+              "source": "nvd",
+              "description": "",
+              "published": "2025-02-26T05:00:00.000Z"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-25796",
+        "description": "SeaCMS v13.3 was discovered to contain a remote code execution (RCE) vulnerability via the component admin_template.php.",
+        "metadata": {
+          "published_date": "2025-02-26T15:15:27.620",
+          "last_modified_date": "2025-02-26T15:15:27.620",
+          "confidence_level": "medium",
+          "severity": ""
+        },
+        "impact": {
+          "cisa_kev": false,
+          "reported_exploited": false,
+          "exploit_maturity": "poc",
+          "automatable": false
+        },
+        "counts": {
+          "public_exploit_count": 1
+        },
+        "epss": {
+          "score": 0,
+          "percentile": 0
+        },
+        "timeline": {
+          "references": [
+            {
+              "type": "reference",
+              "url": "https://github.com/Ka7arotto/Seacms/blob/main/Seacms13.3-rce-6.md",
+              "source_type": "poc",
+              "source": "nvd",
+              "description": "",
+              "published": "2025-02-26T05:00:00.000Z"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-25794",
+        "description": "SeaCMS v13.3 was discovered to contain a remote code execution (RCE) vulnerability via the component admin_ping.php.",
+        "metadata": {
+          "published_date": "2025-02-26T15:15:27.490",
+          "last_modified_date": "2025-02-26T15:15:27.490",
+          "confidence_level": "medium",
+          "severity": ""
+        },
+        "impact": {
+          "cisa_kev": false,
+          "reported_exploited": false,
+          "exploit_maturity": "poc",
+          "automatable": false
+        },
+        "counts": {
+          "public_exploit_count": 1
+        },
+        "epss": {
+          "score": 0,
+          "percentile": 0
+        },
+        "timeline": {
+          "references": [
+            {
+              "type": "reference",
+              "url": "https://github.com/Ka7arotto/Seacms/blob/main/Seacms13.3-rce-4.md",
+              "source_type": "poc",
+              "source": "nvd",
+              "description": "",
+              "published": "2025-02-26T05:00:00.000Z"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-25793",
+        "description": "SeaCMS v13.3 was discovered to contain a remote code execution (RCE) vulnerability via the component admin_notify.php.",
+        "metadata": {
+          "published_date": "2025-02-26T15:15:27.367",
+          "last_modified_date": "2025-02-26T15:15:27.367",
+          "confidence_level": "medium",
+          "severity": ""
+        },
+        "impact": {
+          "cisa_kev": false,
+          "reported_exploited": false,
+          "exploit_maturity": "poc",
+          "automatable": false
+        },
+        "counts": {
+          "public_exploit_count": 1
+        },
+        "epss": {
+          "score": 0,
+          "percentile": 0
+        },
+        "timeline": {
+          "references": [
+            {
+              "type": "reference",
+              "url": "https://github.com/Ka7arotto/Seacms/blob/main/Seacms13.3-rce-3.md",
+              "source_type": "poc",
+              "source": "nvd",
+              "description": "",
+              "published": "2025-02-26T05:00:00.000Z"
             }
           ]
         }
